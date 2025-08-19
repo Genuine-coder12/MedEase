@@ -24,7 +24,7 @@
 				"resourceName":"schedule_default"
 			},
 			"debug":false,
-			"dirty":true,
+			"dirty":false,
 			"fallbackMode":"STOP",
 			"groupId":"_iA5Qu-1",
 			"id":"n_hBMBV",
@@ -47,7 +47,7 @@
 				"appName":"stop"
 			},
 			"debug":false,
-			"dirty":true,
+			"dirty":false,
 			"fallbackMode":"STOP",
 			"groupId":"_iA5Qu-1",
 			"id":"n_YG7Dk",
