@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1751270108875,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"686242dccf53561188c22f2c",
+	"lastModifiedBy":34,
+	"lcName":"automation_maven by glaucusdelete11751266296834",
+	"modifiedTime":1751270145076,
+	"name":"Automation_Maven by GlaucusDelete11751266296834",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_UPHAp-1",
+			"id":"n_56xpv",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
