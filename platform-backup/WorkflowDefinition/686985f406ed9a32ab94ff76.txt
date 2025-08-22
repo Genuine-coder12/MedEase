@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751746036755,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_m9TyZ",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_ED0Zo",
+			"type":"next"
+		}
+	],
+	"id":"686985f406ed9a32ab94ff76",
+	"lastModifiedBy":34,
+	"lcName":"testbuttonamazon rekognition_11751744174820",
+	"modifiedTime":1751746054469,
+	"name":"TestButtonAmazon Rekognition_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_m9TyZ-1",
+			"id":"_m9TyZ",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_m9TyZ-1",
+			"id":"_ED0Zo",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
