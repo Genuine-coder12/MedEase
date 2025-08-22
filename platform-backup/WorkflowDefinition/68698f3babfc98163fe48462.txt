@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751748411654,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_oofIS",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_NWgDg",
+			"type":"next"
+		}
+	],
+	"id":"68698f3babfc98163fe48462",
+	"lastModifiedBy":34,
+	"lcName":"excel_formulae_functioning_117517441748200",
+	"modifiedTime":1751748436754,
+	"name":"Excel_Formulae_Functioning_117517441748200",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_oofIS-1",
+			"id":"_oofIS",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_oofIS-1",
+			"id":"_NWgDg",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
