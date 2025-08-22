@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751748139592,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_0vmcv",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_rmF8Z",
+			"type":"next"
+		}
+	],
+	"id":"68698e2babfc98163fe4809a",
+	"lastModifiedBy":34,
+	"lcName":"testbuttonwhatsapp_11751744174820",
+	"modifiedTime":1751748151578,
+	"name":"TestButtonWhatsApp_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_0vmcv-1",
+			"id":"_0vmcv",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_0vmcv-1",
+			"id":"_rmF8Z",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
