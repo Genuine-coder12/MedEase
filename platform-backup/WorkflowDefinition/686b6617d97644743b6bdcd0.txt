@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751868951969,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_vl88G",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_swaT4",
+			"type":"next"
+		}
+	],
+	"id":"686b6617d97644743b6bdcd0",
+	"lastModifiedBy":34,
+	"lcName":"deletebranchwithmultiplebranching_117518684908710",
+	"modifiedTime":1751869053866,
+	"name":"deleteBranchWithMultipleBranching_117518684908710",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_vl88G-1",
+			"id":"_vl88G",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_vl88G-1",
+			"id":"_swaT4",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
