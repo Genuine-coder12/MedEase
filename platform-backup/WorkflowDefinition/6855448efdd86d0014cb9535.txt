@@ -1,0 +1,44 @@
+{
+	"appsUsed":[],
+	"createdTime":1750418574343,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"6855448efdd86d0014cb9535",
+	"lastModifiedBy":34,
+	"lcName":"callable incomplete app&event - 11750416513356",
+	"modifiedTime":1750513832461,
+	"name":"callable incomplete App&Event - 11750416513356",
+	"nodes":[
+		{
+			"context":{
+				"appName":"callables"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_kdTRB-1",
+			"id":"n_GESox",
+			"index":0,
+			"skip":false,
+			"subTitle":"Callable",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"CALLABLE"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
