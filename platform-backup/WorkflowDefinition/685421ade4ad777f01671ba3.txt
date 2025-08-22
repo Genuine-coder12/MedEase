@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750344109847,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_h6v4B",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_5xQwH",
+			"type":"next"
+		}
+	],
+	"id":"685421ade4ad777f01671ba3",
+	"lastModifiedBy":34,
+	"lcName":"deploy button with error  11750343051928",
+	"modifiedTime":1750514185489,
+	"name":"deploy button with error  11750343051928",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_h6v4B-1",
+			"id":"_h6v4B",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_h6v4B-1",
+			"id":"_5xQwH",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
