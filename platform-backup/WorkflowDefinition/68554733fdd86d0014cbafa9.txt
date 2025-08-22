@@ -1,0 +1,49 @@
+{
+	"appsUsed":[],
+	"createdTime":1750419251641,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"68554733fdd86d0014cbafa9",
+	"lastModifiedBy":34,
+	"lcName":"callable_interface_condition_1_117504165133560",
+	"modifiedTime":1750513762027,
+	"name":"Callable_Interface_Condition_1_117504165133560",
+	"nodes":[
+		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":598,
+				"resourceName":"callables_from_interface"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_1tOsg-1",
+			"id":"n_NHMdi",
+			"index":0,
+			"inputs":{
+				"callableInterfaceId":"660e879f46475738a429301e"
+			},
+			"skip":false,
+			"subTitle":"Callable",
+			"title":"Trigger interface",
+			"trigger":{
+				"type":"CALLABLE"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
