@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750327702847,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_aip8P",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_TdxVY",
+			"type":"next"
+		}
+	],
+	"id":"6853e1965dc0036c9d64e682",
+	"lastModifiedBy":34,
+	"lcName":"opsgenie_connection_test_workflow_117503271665590",
+	"modifiedTime":1750514475002,
+	"name":"opsgenie_connection_test_workflow_117503271665590",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_aip8P-1",
+			"id":"_aip8P",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_aip8P-1",
+			"id":"_TdxVY",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
