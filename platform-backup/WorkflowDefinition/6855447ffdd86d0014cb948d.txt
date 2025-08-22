@@ -1,0 +1,51 @@
+{
+	"appsUsed":[],
+	"createdTime":1750418559156,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"6855447ffdd86d0014cb948d",
+	"lastModifiedBy":34,
+	"lcName":"filter_tagis_117504165133910",
+	"modifiedTime":1750513836551,
+	"name":"Filter_tagIs_117504165133910",
+	"nodes":[
+		{
+			"context":{
+				"appName":"schedule",
+				"resourceVersion":613,
+				"resourceName":"schedule_default"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_PhaO5-1",
+			"id":"n_hJAOG",
+			"index":0,
+			"inputs":{
+				"cron":"INTERVAL",
+				"interval":1,
+				"frequency":"MINUTES"
+			},
+			"skip":false,
+			"subTitle":"Schedule",
+			"title":"New recurring event",
+			"trigger":{
+				"type":"SCHEDULED"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":["hello"],
+	"version":2
+}
