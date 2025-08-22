@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1750343067751,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"68541d9b7d599a777d16a6f1",
+	"lastModifiedBy":34,
+	"lcName":"cloneworkflow_117503430483440",
+	"modifiedTime":1750514215377,
+	"name":"cloneWorkflow_117503430483440",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_VxwIq-1",
+			"id":"n_eqeo0",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
