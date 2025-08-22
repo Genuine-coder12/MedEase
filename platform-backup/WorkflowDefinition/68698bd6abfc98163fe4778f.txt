@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751747542755,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_D94aT",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_NuuSf",
+			"type":"next"
+		}
+	],
+	"id":"68698bd6abfc98163fe4778f",
+	"lastModifiedBy":34,
+	"lcName":"testbuttonpinterest_11751744174820",
+	"modifiedTime":1751747558772,
+	"name":"TestButtonPinterest_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_D94aT-1",
+			"id":"_D94aT",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_D94aT-1",
+			"id":"_NuuSf",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
