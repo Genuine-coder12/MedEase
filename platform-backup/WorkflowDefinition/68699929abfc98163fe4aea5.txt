@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751750953554,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_oXm4W",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_U5Tyc",
+			"type":"next"
+		}
+	],
+	"id":"68699929abfc98163fe4aea5",
+	"lastModifiedBy":34,
+	"lcName":"slack_connection_test_workflow_117517441748060",
+	"modifiedTime":1751750979268,
+	"name":"slack_connection_test_workflow_117517441748060",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_oXm4W-1",
+			"id":"_oXm4W",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_oXm4W-1",
+			"id":"_U5Tyc",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
