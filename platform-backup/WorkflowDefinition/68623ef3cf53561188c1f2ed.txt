@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751269107877,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_Ivr93",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_ZAZXN",
+			"type":"next"
+		}
+	],
+	"id":"68623ef3cf53561188c1f2ed",
+	"lastModifiedBy":34,
+	"lcName":"variablebyunifyapps_addvariablemodal_117512662969180",
+	"modifiedTime":1751269140385,
+	"name":"variableByUnifyApps_addVariableModal_117512662969180",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Ivr93-1",
+			"id":"_Ivr93",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Ivr93-1",
+			"id":"_ZAZXN",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
