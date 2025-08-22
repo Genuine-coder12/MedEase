@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751746731858,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_sl0pQ",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_j7m5m",
+			"type":"next"
+		}
+	],
+	"id":"686988aba6f68f1782156b59",
+	"lastModifiedBy":34,
+	"lcName":"testbuttongoogle ai_11751744174820",
+	"modifiedTime":1751746752171,
+	"name":"TestButtonGoogle AI_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_sl0pQ-1",
+			"id":"_sl0pQ",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_sl0pQ-1",
+			"id":"_j7m5m",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
