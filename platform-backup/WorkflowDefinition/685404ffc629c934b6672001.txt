@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750336767444,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_3JMFl",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_o0Muv",
+			"type":"next"
+		}
+	],
+	"id":"685404ffc629c934b6672001",
+	"lastModifiedBy":34,
+	"lcName":"testbuttongoogle vertex ai_11750333147660",
+	"modifiedTime":1750514286158,
+	"name":"TestButtonGoogle vertex AI_11750333147660",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_3JMFl-1",
+			"id":"_3JMFl",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_3JMFl-1",
+			"id":"_o0Muv",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
