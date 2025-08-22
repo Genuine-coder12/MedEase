@@ -1,0 +1,86 @@
+{
+	"appsUsed":[],
+	"createdTime":1751749323688,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"n_dzIsR",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"n_YzKwq",
+			"type":"next"
+		}
+	],
+	"id":"686992cbabfc98163fe490ec",
+	"lastModifiedBy":34,
+	"lcName":"callble validate synchronous off - 11751744174806",
+	"modifiedTime":1751749359363,
+	"name":"callble validate synchronous OFF - 11751744174806",
+	"nodes":[
+		{
+			"context":{
+				"appName":"webhooks",
+				"resourceVersion":628,
+				"resourceName":"webhooks_default"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_wfqa0-1",
+			"id":"n_dzIsR",
+			"index":0,
+			"inputs":{
+				"request":{
+					"contentType":"application/json"
+				}
+			},
+			"skip":false,
+			"subTitle":"Webhook",
+			"title":"New event",
+			"trigger":{
+				"type":"WEBHOOK"
+			},
+			"type":"START"
+		},
+		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":648,
+				"resourceName":"callables_call_automation",
+				"type":"APPLICATION"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_wfqa0-1",
+			"id":"n_YzKwq",
+			"index":0,
+			"inputs":{
+				"automationId":"686992b9abfc98163fe490b7",
+				"runtimeConnections":{
+					
+				},
+				"synchronous":false,
+				"version":"-1",
+				"parameters":{
+					
+				}
+			},
+			"skip":false,
+			"subTitle":"Callable",
+			"title":"Call automation",
+			"type":"CALL_WORKFLOW"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
