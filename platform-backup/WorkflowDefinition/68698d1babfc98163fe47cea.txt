@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751747867555,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_DkCa2",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_133h3",
+			"type":"next"
+		}
+	],
+	"id":"68698d1babfc98163fe47cea",
+	"lastModifiedBy":34,
+	"lcName":"testbuttonshopify_11751744174820",
+	"modifiedTime":1751747883669,
+	"name":"TestButtonShopify_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_DkCa2-1",
+			"id":"_DkCa2",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_DkCa2-1",
+			"id":"_133h3",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
