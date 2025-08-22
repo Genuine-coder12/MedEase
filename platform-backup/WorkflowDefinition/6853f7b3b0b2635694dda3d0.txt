@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750333363048,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_if0XZ",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_kOwfu",
+			"type":"next"
+		}
+	],
+	"id":"6853f7b3b0b2635694dda3d0",
+	"lastModifiedBy":34,
+	"lcName":"groovycodeoutputparams_117503331476600",
+	"modifiedTime":1750514447342,
+	"name":"groovyCodeOutputParams_117503331476600",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_if0XZ-1",
+			"id":"_if0XZ",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_if0XZ-1",
+			"id":"_kOwfu",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
