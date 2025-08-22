@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750336468950,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_1HlCN",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_jw5gr",
+			"type":"next"
+		}
+	],
+	"id":"685403d4b0b2635694de0f2c",
+	"lastModifiedBy":34,
+	"lcName":"callable fileupload json - 11750333147688",
+	"modifiedTime":1750514299993,
+	"name":"callable fileupload json - 11750333147688",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_1HlCN-1",
+			"id":"_1HlCN",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_1HlCN-1",
+			"id":"_jw5gr",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
