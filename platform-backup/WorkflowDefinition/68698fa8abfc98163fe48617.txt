@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751748520067,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_ibmwX",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_ZeSO3",
+			"type":"next"
+		}
+	],
+	"id":"68698fa8abfc98163fe48617",
+	"lastModifiedBy":34,
+	"lcName":"cutandpastenode_117517441748200",
+	"modifiedTime":1751748539673,
+	"name":"cutAndPasteNode_117517441748200",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_ibmwX-1",
+			"id":"_ibmwX",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_ibmwX-1",
+			"id":"_ZeSO3",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
