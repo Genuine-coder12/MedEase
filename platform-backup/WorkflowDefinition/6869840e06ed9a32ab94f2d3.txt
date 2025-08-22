@@ -1,0 +1,44 @@
+{
+	"appsUsed":[],
+	"createdTime":1751745550068,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"6869840e06ed9a32ab94f2d3",
+	"lastModifiedBy":34,
+	"lcName":"testruns_errors_117517441748060",
+	"modifiedTime":1751745563203,
+	"name":"TestRuns_errors_117517441748060",
+	"nodes":[
+		{
+			"context":{
+				"appName":"callables"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_B05HB-1",
+			"id":"n_eUrHb",
+			"index":0,
+			"skip":false,
+			"subTitle":"Callable",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"CALLABLE"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
