@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750334063356,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_Zp6bv",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_UUEDq",
+			"type":"next"
+		}
+	],
+	"id":"6853fa6fc629c934b666c5b9",
+	"lastModifiedBy":34,
+	"lcName":"cutloopwithmultiplebranches__117503331476880",
+	"modifiedTime":1750514424570,
+	"name":"cutLoopWithMultipleBranches__117503331476880",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Zp6bv-1",
+			"id":"_Zp6bv",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Zp6bv-1",
+			"id":"_UUEDq",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
