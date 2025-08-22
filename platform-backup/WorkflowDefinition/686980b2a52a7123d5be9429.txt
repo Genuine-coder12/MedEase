@@ -1,0 +1,87 @@
+{
+	"appsUsed":["slack"],
+	"createdTime":1751744690264,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_XHYTL",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_FaDVJ",
+			"type":"next"
+		},
+		{
+			"fromNodeId":"_FaDVJ",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"n_Mi1cl",
+			"type":"next"
+		}
+	],
+	"id":"686980b2a52a7123d5be9429",
+	"lastModifiedBy":34,
+	"lcName":"modified_time_desc_order 117517441748061",
+	"modifiedTime":1751744734875,
+	"name":"modified_time_desc_order 117517441748061",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_XHYTL-1",
+			"id":"_XHYTL",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_XHYTL-1",
+			"id":"_FaDVJ",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		},
+		{
+			"context":{
+				"appName":"slack",
+				"resourceVersion":27428,
+				"connectionId":"662f8ddb91d8ba4394d0cce6",
+				"resourceName":"slack_post_message_in_channel",
+				"type":"APPLICATION"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_XHYTL-1",
+			"id":"n_Mi1cl",
+			"index":0,
+			"inputs":{
+				"link_names":true,
+				"mrkdwn":true
+			},
+			"skip":false,
+			"subTitle":"Slack",
+			"title":"Post message",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
