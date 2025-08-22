@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1750327626744,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"6853e14a5dc0036c9d64e391",
+	"lastModifiedBy":34,
+	"lcName":"automation_digilockerdelete11750327152306",
+	"modifiedTime":1750514478550,
+	"name":"Automation_DigiLockerDelete11750327152306",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_muO4h-1",
+			"id":"n_4OA0s",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
