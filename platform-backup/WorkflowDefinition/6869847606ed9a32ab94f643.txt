@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751745654354,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_cKbB4",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_43Fxy",
+			"type":"next"
+		}
+	],
+	"id":"6869847606ed9a32ab94f643",
+	"lastModifiedBy":34,
+	"lcName":"validateschemaworkflow_11751744174820",
+	"modifiedTime":1751745683528,
+	"name":"ValidateSchemaWorkflow_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_cKbB4-1",
+			"id":"_cKbB4",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_cKbB4-1",
+			"id":"_43Fxy",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
