@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751745588890,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_k5tcl",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_btTZE",
+			"type":"next"
+		}
+	],
+	"id":"6869843406ed9a32ab94f40d",
+	"lastModifiedBy":34,
+	"lcName":"logging_visiblelog_11751744174820",
+	"modifiedTime":1751745617487,
+	"name":"logging_visibleLog_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_k5tcl-1",
+			"id":"_k5tcl",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_k5tcl-1",
+			"id":"_btTZE",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
