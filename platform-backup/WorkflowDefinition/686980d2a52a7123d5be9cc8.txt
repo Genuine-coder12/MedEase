@@ -1,0 +1,51 @@
+{
+	"appsUsed":[],
+	"createdTime":1751744722457,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"686980d2a52a7123d5be9cc8",
+	"lastModifiedBy":34,
+	"lcName":"webhook setup incomplete - 11751744174806",
+	"modifiedTime":1751744749573,
+	"name":"Webhook setup Incomplete - 11751744174806",
+	"nodes":[
+		{
+			"context":{
+				"appName":"webhooks",
+				"resourceVersion":628,
+				"resourceName":"webhooks_default"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_u0POI-1",
+			"id":"n_tcfTF",
+			"index":0,
+			"inputs":{
+				"request":{
+					"contentType":"application/json"
+				}
+			},
+			"skip":false,
+			"subTitle":"Webhook",
+			"title":"New event",
+			"trigger":{
+				"type":"WEBHOOK"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
