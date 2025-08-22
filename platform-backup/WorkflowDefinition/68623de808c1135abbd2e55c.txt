@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1751268840476,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"68623de808c1135abbd2e55c",
+	"lastModifiedBy":34,
+	"lcName":"automation_talenoxdelete11751266297429",
+	"modifiedTime":1751268908475,
+	"name":"Automation_TalenoxDelete11751266297429",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_9jJX2-1",
+			"id":"n_WMTpD",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
