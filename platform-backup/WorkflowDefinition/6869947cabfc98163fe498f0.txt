@@ -1,0 +1,127 @@
+{
+	"appsUsed":[],
+	"createdTime":1751749756754,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"n_Nxwo2",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"n_zcuu4",
+			"type":"next"
+		}
+	],
+	"id":"6869947cabfc98163fe498f0",
+	"lastModifiedBy":34,
+	"lcName":"create variables use saved snippet and check linking is happening correctly unlink the schema from the snippet and make changes in the schema_117517441748200",
+	"modifiedTime":1751749813172,
+	"name":"Create variables use saved snippet and check linking is happening correctly unlink the schema from the snippet and make changes in the schema_117517441748200",
+	"nodes":[
+		{
+			"context":{
+				"appName":"webhooks",
+				"resourceVersion":628,
+				"resourceName":"webhooks_default"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_mYB3a-1",
+			"id":"n_Nxwo2",
+			"index":0,
+			"inputs":{
+				"request":{
+					"contentType":"application/json"
+				}
+			},
+			"skip":false,
+			"subTitle":"Webhook",
+			"title":"New event",
+			"trigger":{
+				"type":"WEBHOOK"
+			},
+			"type":"START"
+		},
+		{
+			"context":{
+				"appName":"variable_by_unifyapps",
+				"resourceVersion":636,
+				"resourceName":"variable_by_unifyapps_create_variables",
+				"type":"APPLICATION"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_mYB3a-1",
+			"id":"n_zcuu4",
+			"index":0,
+			"inputSchema":{
+				"type":"SCHEMA_AND_LAYOUT",
+				"dynamic":false,
+				"layout":{
+					
+				},
+				"schema":{
+					"additionalProperties":false,
+					"$comment":"Snippet_Create variables use saved snippet and check linking is happening correctly unlink the schema from the snippet and make changes in the schema_117517441748200",
+					"type":"object",
+					"properties":{
+						"inputString":{
+							"type":"string",
+							"title":"inputString"
+						},
+						"inputNumber":{
+							"type":"number",
+							"title":"inputNumber"
+						},
+						"inputInteger":{
+							"type":"integer",
+							"title":"inputInteger"
+						}
+					}
+				}
+			},
+			"inputs":{
+				
+			},
+			"outputSchema":{
+				"type":"SCHEMA",
+				"dynamic":false,
+				"schema":{
+					"additionalProperties":false,
+					"$comment":"Snippet_Create variables use saved snippet and check linking is happening correctly unlink the schema from the snippet and make changes in the schema_117517441748200",
+					"type":"object",
+					"properties":{
+						"inputString":{
+							"type":"string",
+							"title":"inputString"
+						},
+						"inputNumber":{
+							"type":"number",
+							"title":"inputNumber"
+						},
+						"inputInteger":{
+							"type":"integer",
+							"title":"inputInteger"
+						}
+					}
+				}
+			},
+			"skip":false,
+			"subTitle":"Variable by UnifyApps",
+			"title":"Create variables",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":["entity|e_code_snippet|e_6869948bd94de757368e75f6"],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
