@@ -1,0 +1,102 @@
+{
+	"appsUsed":[],
+	"createdTime":1750401119238,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"6855005ff8caca7473f25456",
+	"lastModifiedBy":34,
+	"lcName":"callable api params- 11750400595549",
+	"modifiedTime":1750514139881,
+	"name":"callable API Params- 11750400595549",
+	"nodes":[
+		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":690,
+				"resourceName":"callables_from_api"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_eQcuY-1",
+			"id":"n_ci4HQ",
+			"index":0,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"updatedpathParams_12345":{
+								"type":"string",
+								"title":"updatedpathParams_12345"
+							},
+							"pathParams_122345":{
+								"type":"string",
+								"title":"pathParams_122345"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"queryParams":{
+						"type":"object",
+						"properties":{
+							"queryParams_12345":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								},
+								"title":"queryParams_12345"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"headers":{
+						"type":"object",
+						"properties":{
+							"header_12345":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"header_12345"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					}
+				},
+				"endpointType":"REST",
+				"streamingResponse":false
+			},
+			"skip":false,
+			"subTitle":"Callable",
+			"title":"Trigger via API",
+			"trigger":{
+				"type":"CALLABLE"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
