@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750336761354,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_jG0YD",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_M1qH4",
+			"type":"next"
+		}
+	],
+	"id":"685404f9b0b2635694de1ab3",
+	"lastModifiedBy":34,
+	"lcName":"zendesk create ticket - 117503331485160",
+	"modifiedTime":1750514286656,
+	"name":"Zendesk Create ticket - 117503331485160",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_jG0YD-1",
+			"id":"_jG0YD",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_jG0YD-1",
+			"id":"_M1qH4",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
