@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751750027055,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_AvLbi",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_jOqwe",
+			"type":"next"
+		}
+	],
+	"id":"6869958babfc98163fe49dbc",
+	"lastModifiedBy":34,
+	"lcName":"create list in using code snippet created schema should be clearable before and after unlinking_117517441748200",
+	"modifiedTime":1751750049654,
+	"name":"Create list In Using Code Snippet created schema should be clearable before and after unlinking_117517441748200",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_AvLbi-1",
+			"id":"_AvLbi",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_AvLbi-1",
+			"id":"_jOqwe",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
