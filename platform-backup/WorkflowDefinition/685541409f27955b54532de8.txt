@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1750417728347,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"685541409f27955b54532de8",
+	"lastModifiedBy":34,
+	"lcName":"automation_pinterestdelete11750416514555",
+	"modifiedTime":1750513913337,
+	"name":"Automation_PinterestDelete11750416514555",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_cYfLq-1",
+			"id":"n_UrfZB",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
