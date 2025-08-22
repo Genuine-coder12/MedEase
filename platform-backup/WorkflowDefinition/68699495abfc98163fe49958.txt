@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751749781057,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_7ks08",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_QlfMa",
+			"type":"next"
+		}
+	],
+	"id":"68699495abfc98163fe49958",
+	"lastModifiedBy":34,
+	"lcName":"create variables in using code snippet created schema should be editable once it is unlinked but not when it is linked._117517441748200",
+	"modifiedTime":1751749804883,
+	"name":"Create variables In Using Code Snippet created schema should be editable once it is unlinked but not when it is linked._117517441748200",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_7ks08-1",
+			"id":"_7ks08",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_7ks08-1",
+			"id":"_QlfMa",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
