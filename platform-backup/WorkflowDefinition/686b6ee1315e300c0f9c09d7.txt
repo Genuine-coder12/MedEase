@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751871201579,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_Feq3D",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_zL9MZ",
+			"type":"next"
+		}
+	],
+	"id":"686b6ee1315e300c0f9c09d7",
+	"lastModifiedBy":34,
+	"lcName":"testbuttonfacebook pages_11751868490871",
+	"modifiedTime":1751871214192,
+	"name":"TestButtonFacebook Pages_11751868490871",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Feq3D-1",
+			"id":"_Feq3D",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Feq3D-1",
+			"id":"_zL9MZ",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
