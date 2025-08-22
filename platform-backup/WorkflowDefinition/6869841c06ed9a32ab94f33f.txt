@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751745564438,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_Iexvd",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_cTeXQ",
+			"type":"next"
+		}
+	],
+	"id":"6869841c06ed9a32ab94f33f",
+	"lastModifiedBy":34,
+	"lcName":"logging_addcondition_11751744174820",
+	"modifiedTime":1751745590859,
+	"name":"logging_addCondition_11751744174820",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Iexvd-1",
+			"id":"_Iexvd",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Iexvd-1",
+			"id":"_cTeXQ",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
