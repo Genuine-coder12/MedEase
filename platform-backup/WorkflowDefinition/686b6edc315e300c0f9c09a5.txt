@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1751871196216,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_as3qu",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_EpL8R",
+			"type":"next"
+		}
+	],
+	"id":"686b6edc315e300c0f9c09a5",
+	"lastModifiedBy":34,
+	"lcName":"testbuttonbitrix24_11751868490871",
+	"modifiedTime":1751871208159,
+	"name":"TestButtonBitrix24_11751868490871",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_as3qu-1",
+			"id":"_as3qu",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_as3qu-1",
+			"id":"_EpL8R",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
