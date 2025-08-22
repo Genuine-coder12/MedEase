@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1750419790037,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"6855494efdd86d0014cbc7fb",
+	"lastModifiedBy":34,
+	"lcName":"automation_google admobdelete11750416513723",
+	"modifiedTime":1750513707285,
+	"name":"Automation_Google AdMobDelete11750416513723",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_tUVVI-1",
+			"id":"n_xbZZD",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
