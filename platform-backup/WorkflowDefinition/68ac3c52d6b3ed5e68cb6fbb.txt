@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118098137,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118118865,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3c66d6b3ed5e68cb70d9",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3c52d6b3ed5e68cb6fbb",
 	"lastModifiedBy":34,
 	"lcName":"change_code_snippet_117561180901870",
-	"modifiedTime":1756118116247,
+	"modifiedTime":1756118130805,
 	"name":"change_code_snippet_117561180901870",
 	"nodes":[
 		{
@@ -32,7 +40,54 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"user":{
+								"type":"object",
+								"properties":{
+									"id":{
+										"type":"integer",
+										"title":"id"
+									},
+									"name":{
+										"type":"string",
+										"title":"name"
+									},
+									"email":{
+										"type":"string",
+										"title":"email"
+									},
+									"roles":{
+										"type":"array",
+										"items":{
+											"type":"string"
+										},
+										"title":"roles"
+									},
+									"profile":{
+										"type":"object",
+										"properties":{
+											"age":{
+												"type":"integer",
+												"title":"age"
+											},
+											"gender":{
+												"type":"string",
+												"title":"gender"
+											}
+										},
+										"title":"profile",
+										"additionalProperties":false
+									}
+								},
+								"title":"user",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false
+					}
 				},
 				"endpointType":"REST",
 				"response":[
@@ -96,7 +151,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac3c713578c438f3ab137e"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -107,5 +162,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
