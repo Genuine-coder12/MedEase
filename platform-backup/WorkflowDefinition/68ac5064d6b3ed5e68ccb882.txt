@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756123236980,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756123250537,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac5072d6b3ed5e68ccbacc",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac5064d6b3ed5e68ccb882",
 	"lastModifiedBy":34,
 	"lcName":"request_webhook_header_fields_117561231279030",
-	"modifiedTime":1756123247790,
+	"modifiedTime":1756123260173,
 	"name":"request_webhook_header_fields_117561231279030",
 	"nodes":[
 		{
@@ -36,10 +44,6 @@
 					"headers":{
 						"type":"object",
 						"properties":{
-							"StringHeader":{
-								"type":"string",
-								"title":"StringHeader"
-							},
 							"ArrayStringHeader":{
 								"type":"array",
 								"items":{
@@ -133,5 +137,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
