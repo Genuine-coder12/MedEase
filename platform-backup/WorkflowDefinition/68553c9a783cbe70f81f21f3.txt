@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750416538557,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_wx27m",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_H4AKb",
+			"type":"next"
+		}
+	],
+	"id":"68553c9a783cbe70f81f21f3",
+	"lastModifiedBy":34,
+	"lcName":"automation_microsoft entra iddelete11750416514555",
+	"modifiedTime":1750514021847,
+	"name":"Automation_Microsoft Entra IDDelete11750416514555",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_wx27m-1",
+			"id":"_wx27m",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_wx27m-1",
+			"id":"_H4AKb",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
