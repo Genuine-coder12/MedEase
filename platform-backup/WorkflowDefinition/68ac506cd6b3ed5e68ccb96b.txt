@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756123244392,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756123256659,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac5078d6b3ed5e68ccbb52",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac506cd6b3ed5e68ccb96b",
 	"lastModifiedBy":34,
 	"lcName":"input_schema_all_params_soap_117561231088510",
-	"modifiedTime":1756123254159,
+	"modifiedTime":1756123266245,
 	"name":"input_schema_all_params_soap_117561231088510",
 	"nodes":[
 		{
@@ -32,7 +40,65 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"headers":{
+						"type":"object",
+						"properties":{
+							"StrHeader":{
+								"type":"string",
+								"title":"StrHeader"
+							},
+							"ArrayStrHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStrHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"soapHeaders":{
+						"type":"object",
+						"properties":{
+							"StrReqHeader":{
+								"type":"string",
+								"title":"StrReqHeader"
+							},
+							"ArrayStrReqHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStrReqHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"NumberBody":{
+								"type":"number",
+								"title":"NumberBody"
+							},
+							"BooleanBody":{
+								"type":"boolean",
+								"title":"BooleanBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"NumberBody",
+							"BooleanBody"
+						]
+					}
 				},
 				"endpointType":"SOAP",
 				"response":[
@@ -104,5 +170,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
