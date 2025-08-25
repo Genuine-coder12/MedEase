@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120174177,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120190302,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac447ed6b3ed5e68cbcbcf",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac446ed6b3ed5e68cbc9ec",
 	"lastModifiedBy":34,
 	"lcName":"hidden_cookie_columns_117561200835690",
-	"modifiedTime":1756120187704,
+	"modifiedTime":1756120201428,
 	"name":"hidden_cookie_columns_117561200835690",
 	"nodes":[
 		{
@@ -36,17 +44,9 @@
 					"cookies":{
 						"type":"object",
 						"properties":{
-							"StringCookie":{
-								"type":"string",
-								"title":"StringCookie"
-							},
 							"IntegerCookie":{
 								"type":"integer",
 								"title":"IntegerCookie"
-							},
-							"NumberCookie":{
-								"type":"number",
-								"title":"NumberCookie"
 							},
 							"BooleanCookie":{
 								"type":"boolean",
@@ -132,5 +132,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
