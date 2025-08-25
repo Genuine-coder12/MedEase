@@ -5,46 +5,108 @@
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_JIKEH",
+			"fromNodeId":"n_qNKAi",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_Zi4SH",
+			"toNodeId":"n_vQu3Z",
 			"type":"next"
 		}
 	],
 	"id":"68ac448ad6b3ed5e68cbcd64",
 	"lastModifiedBy":34,
 	"lcName":"child automation_117561200819960",
-	"modifiedTime":1756120202301,
+	"modifiedTime":1756120213452,
 	"name":"Child automation_117561200819960",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":620,
+				"resourceName":"callables_from_automation"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_JIKEH-1",
-			"id":"_JIKEH",
-			"index":0,
+			"id":"n_qNKAi",
+			"index":1,
+			"inputs":{
+				"result":{
+					"type":"object",
+					"properties":{
+						"output_String":{
+							"type":"string",
+							"title":"output_String"
+						}
+					},
+					"additionalProperties":false,
+					"required":[
+						"output_String"
+					]
+				},
+				"setup":{
+					"type":"object",
+					"properties":{
+						"StringBody":{
+							"type":"string",
+							"title":"StringBody"
+						},
+						"NumberBody":{
+							"type":"number",
+							"title":"NumberBody"
+						},
+						"IntegerBody":{
+							"type":"integer",
+							"title":"IntegerBody"
+						},
+						"BooleanBody":{
+							"type":"boolean",
+							"title":"BooleanBody"
+						}
+					},
+					"additionalProperties":false,
+					"required":[
+						"StringBody",
+						"NumberBody",
+						"IntegerBody",
+						"BooleanBody"
+					]
+				}
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via automation",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":663,
+				"resourceName":"callables_return_to_automation",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_JIKEH-1",
-			"id":"_Zi4SH",
-			"index":0,
+			"id":"n_vQu3Z",
+			"index":2,
+			"inputs":{
+				"result":{
+					"output_String":"cool"
+				}
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to automation",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +117,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":1
 }
