@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120227920,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120243548,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44b3d6b3ed5e68cbd01a",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac44a3d6b3ed5e68cbcf93",
 	"lastModifiedBy":34,
 	"lcName":"input_schema_all_webhook_params_117561200823130",
-	"modifiedTime":1756120240386,
+	"modifiedTime":1756120254412,
 	"name":"input_schema_all_webhook_params_117561200823130",
 	"nodes":[
 		{
@@ -32,7 +40,82 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"StringPath":{
+								"type":"string",
+								"title":"StringPath"
+							},
+							"NumberPath":{
+								"type":"number",
+								"title":"NumberPath"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"queryParams":{
+						"type":"object",
+						"properties":{
+							"NumberQuery":{
+								"type":"number",
+								"title":"NumberQuery"
+							},
+							"IntegerQuery":{
+								"type":"integer",
+								"title":"IntegerQuery"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"headers":{
+						"type":"object",
+						"properties":{
+							"StringHeader":{
+								"type":"string",
+								"title":"StringHeader"
+							},
+							"ArrayStringHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStringHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"IntegerBody":{
+								"type":"integer",
+								"title":"IntegerBody"
+							},
+							"ArrayIntegerBody":{
+								"type":"array",
+								"items":{
+									"type":"integer"
+								},
+								"title":"ArrayIntegerBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"IntegerBody",
+							"ArrayIntegerBody"
+						]
+					}
 				}
 			},
 			"skip":false,
@@ -113,5 +196,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
