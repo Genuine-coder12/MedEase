@@ -1,0 +1,59 @@
+{
+	"appsUsed":[],
+	"createdTime":1756120224902,
+	"deleted":false,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_HcQ20",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_hYNgZ",
+			"type":"next"
+		}
+	],
+	"id":"68ac44a0d6b3ed5e68cbcf68",
+	"lastModifiedBy":34,
+	"lcName":"parent automation_117561200819960",
+	"modifiedTime":1756120224902,
+	"name":"Parent automation_117561200819960",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_HcQ20-1",
+			"id":"_HcQ20",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_HcQ20-1",
+			"id":"_hYNgZ",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true,
+		"route":{
+			"tierName":"global"
+		}
+	},
+	"standard":false,
+	"tags":[],
+	"version":0
+}
