@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120241410,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120264077,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44c8d6b3ed5e68cbd12f",
+		"status":"DEPLOYED",
+		"version":2,
+		"workflowVersion":2
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,10 +23,17 @@
 	"id":"68ac44b1d6b3ed5e68cbd00e",
 	"lastModifiedBy":34,
 	"lcName":"create_use_code_snippet_117561200961240",
-	"modifiedTime":1756120250360,
+	"modifiedTime":1756120278721,
 	"name":"create_use_code_snippet_117561200961240",
 	"nodes":[
 		{
+			"additional":{
+				"xsdSchemaConfig":{
+					"root":{
+						
+					}
+				}
+			},
 			"context":{
 				"appName":"callables",
 				"resourceVersion":620,
@@ -43,6 +58,61 @@
 					"required":[
 						"output"
 					]
+				},
+				"setup":{
+					"type":"object",
+					"properties":{
+						"user":{
+							"type":"object",
+							"properties":{
+								"id":{
+									"type":"integer",
+									"title":"id"
+								},
+								"email_id":{
+									"type":"string",
+									"title":"email_id"
+								},
+								"active":{
+									"type":"boolean",
+									"title":"active"
+								},
+								"designation":{
+									"type":"array",
+									"items":{
+										"type":"string"
+									},
+									"title":"designation"
+								},
+								"profile":{
+									"type":"object",
+									"properties":{
+										"age":{
+											"type":"integer",
+											"title":"age"
+										},
+										"city":{
+											"type":"string",
+											"title":"city"
+										},
+										"gender":{
+											"type":"string",
+											"title":"gender"
+										}
+									},
+									"title":"profile",
+									"additionalProperties":false
+								},
+								"created_at":{
+									"type":"string",
+									"title":"created_at"
+								}
+							},
+							"title":"user",
+							"additionalProperties":false
+						}
+					},
+					"additionalProperties":false
 				}
 			},
 			"skip":false,
@@ -78,7 +148,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac44c586133b643003c258"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -89,5 +159,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":3
 }
