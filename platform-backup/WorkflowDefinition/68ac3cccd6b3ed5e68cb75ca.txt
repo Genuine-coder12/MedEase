@@ -1,0 +1,119 @@
+{
+	"appsUsed":[],
+	"createdTime":1756118220402,
+	"deleted":false,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"n_ThalT",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"n_5u07t",
+			"type":"next"
+		}
+	],
+	"id":"68ac3cccd6b3ed5e68cb75ca",
+	"lastModifiedBy":34,
+	"lcName":"parent automation_117561180891160",
+	"modifiedTime":1756118233763,
+	"name":"Parent automation_117561180891160",
+	"nodes":[
+		{
+			"context":{
+				"appName":"webhooks",
+				"resourceVersion":630,
+				"resourceName":"webhooks_default"
+			},
+			"debug":false,
+			"dirty":true,
+			"fallbackMode":"STOP",
+			"groupId":"_brri0-1",
+			"id":"n_ThalT",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"StringBody":{
+								"type":"string",
+								"title":"StringBody"
+							},
+							"NumberBody":{
+								"type":"number",
+								"title":"NumberBody"
+							},
+							"IntegerBody":{
+								"type":"integer",
+								"title":"IntegerBody"
+							},
+							"BooleanBody":{
+								"type":"boolean",
+								"title":"BooleanBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"StringBody",
+							"NumberBody",
+							"IntegerBody",
+							"BooleanBody"
+						]
+					}
+				}
+			},
+			"skip":false,
+			"subTitle":"Webhook",
+			"title":"New event",
+			"trigger":{
+				"type":"WEBHOOK"
+			},
+			"type":"START"
+		},
+		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":635,
+				"resourceName":"callables_call_automation_async",
+				"type":"APPLICATION"
+			},
+			"debug":false,
+			"dirty":true,
+			"fallbackMode":"STOP",
+			"groupId":"_brri0-1",
+			"id":"n_5u07t",
+			"index":2,
+			"inputs":{
+				"automationId":"68ac3cb7d6b3ed5e68cb74f2",
+				"runtimeConnections":{
+					
+				},
+				"version":"-1",
+				"parameters":{
+					"StringBody":"{{ n_ThalT.outputs.body.StringBody }}",
+					"NumberBody":"{{ n_ThalT.outputs.body.NumberBody }}",
+					"IntegerBody":"{{ n_ThalT.outputs.body.IntegerBody }}",
+					"BooleanBody":"{{ n_ThalT.outputs.body.BooleanBody }}"
+				}
+			},
+			"skip":false,
+			"subTitle":"Callable",
+			"title":"Call automation async",
+			"type":"CALL_WORKFLOW"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true,
+		"route":{
+			"tierName":"global"
+		}
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
