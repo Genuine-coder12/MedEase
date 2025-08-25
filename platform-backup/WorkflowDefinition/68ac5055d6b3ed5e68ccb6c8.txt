@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756123221733,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756123236293,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac5063d6b3ed5e68ccb863",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac5055d6b3ed5e68ccb6c8",
 	"lastModifiedBy":34,
 	"lcName":"hidden_webhook_path_columns_117561231279030",
-	"modifiedTime":1756123233268,
+	"modifiedTime":1756123245502,
 	"name":"hidden_webhook_path_columns_117561231279030",
 	"nodes":[
 		{
@@ -36,10 +44,6 @@
 					"pathParams":{
 						"type":"object",
 						"properties":{
-							"StringParam":{
-								"type":"string",
-								"title":"StringParam"
-							},
 							"NumberParam":{
 								"type":"number",
 								"title":"NumberParam"
@@ -130,5 +134,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
