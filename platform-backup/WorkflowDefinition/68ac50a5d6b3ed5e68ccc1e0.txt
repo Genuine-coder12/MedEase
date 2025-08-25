@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756123301721,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756123315170,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac50b3d6b3ed5e68ccc38c",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac50a5d6b3ed5e68ccc1e0",
 	"lastModifiedBy":34,
 	"lcName":"input_schema_all_params_117561231242360",
-	"modifiedTime":1756123312607,
+	"modifiedTime":1756123327365,
 	"name":"input_schema_all_params_117561231242360",
 	"nodes":[
 		{
@@ -32,7 +40,102 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"StringPath":{
+								"type":"string",
+								"title":"StringPath"
+							},
+							"BooleanPath":{
+								"type":"boolean",
+								"title":"BooleanPath"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"queryParams":{
+						"type":"object",
+						"properties":{
+							"NumberQuery":{
+								"type":"number",
+								"title":"NumberQuery"
+							},
+							"ArrayNumberQuery":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								},
+								"title":"ArrayNumberQuery"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"headers":{
+						"type":"object",
+						"properties":{
+							"StringHeader":{
+								"type":"string",
+								"title":"StringHeader"
+							},
+							"ArrayStringHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStringHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"cookies":{
+						"type":"object",
+						"properties":{
+							"StringCookie":{
+								"type":"string",
+								"title":"StringCookie"
+							},
+							"IntegerCookie":{
+								"type":"integer",
+								"title":"IntegerCookie"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"IntegerBody":{
+								"type":"integer",
+								"title":"IntegerBody"
+							},
+							"ArrayIntegerBody":{
+								"type":"array",
+								"items":{
+									"type":"integer"
+								},
+								"title":"ArrayIntegerBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"IntegerBody",
+							"ArrayIntegerBody"
+						]
+					}
 				},
 				"endpointType":"REST",
 				"response":[
@@ -107,5 +210,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
