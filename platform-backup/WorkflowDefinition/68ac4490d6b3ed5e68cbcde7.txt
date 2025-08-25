@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120208623,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120231038,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44a7d6b3ed5e68cbcfaa",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac4490d6b3ed5e68cbcde7",
 	"lastModifiedBy":34,
 	"lcName":"input_schema_117561200835690",
-	"modifiedTime":1756120228456,
+	"modifiedTime":1756120242702,
 	"name":"input_schema_117561200835690",
 	"nodes":[
 		{
@@ -32,7 +40,62 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"headers":{
+						"type":"object",
+						"properties":{
+							"StringHeader":{
+								"type":"string",
+								"title":"StringHeader"
+							},
+							"ArrayStringHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStringHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"cookies":{
+						"type":"object",
+						"properties":{
+							"StringCookie":{
+								"type":"string",
+								"title":"StringCookie"
+							},
+							"IntegerCookie":{
+								"type":"integer",
+								"title":"IntegerCookie"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							},
+							"Age":{
+								"type":"number",
+								"title":"Age"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"Name",
+							"Age"
+						]
+					}
 				},
 				"endpointType":"REST",
 				"response":[
@@ -107,5 +170,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
