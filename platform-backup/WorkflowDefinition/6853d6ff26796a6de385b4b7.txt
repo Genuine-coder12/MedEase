@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750324991143,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_ECMb2",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_k2UnI",
+			"type":"next"
+		}
+	],
+	"id":"6853d6ff26796a6de385b4b7",
+	"lastModifiedBy":34,
+	"lcName":"testbuttonsnowflake_11750324577631",
+	"modifiedTime":1750514567436,
+	"name":"TestButtonSnowflake_11750324577631",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_ECMb2-1",
+			"id":"_ECMb2",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_ECMb2-1",
+			"id":"_k2UnI",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
