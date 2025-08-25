@@ -5,46 +5,123 @@
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_VhGMl",
+			"fromNodeId":"n_abbdV",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_AfoxX",
+			"toNodeId":"n_68kbu",
 			"type":"next"
 		}
 	],
 	"id":"68ac446ed6b3ed5e68cbc9ec",
 	"lastModifiedBy":34,
 	"lcName":"hidden_cookie_columns_117561200835690",
-	"modifiedTime":1756120174177,
+	"modifiedTime":1756120187704,
 	"name":"hidden_cookie_columns_117561200835690",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":693,
+				"resourceName":"callables_from_api"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_VhGMl-1",
-			"id":"_VhGMl",
-			"index":0,
+			"id":"n_abbdV",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"cookies":{
+						"type":"object",
+						"properties":{
+							"StringCookie":{
+								"type":"string",
+								"title":"StringCookie"
+							},
+							"IntegerCookie":{
+								"type":"integer",
+								"title":"IntegerCookie"
+							},
+							"NumberCookie":{
+								"type":"number",
+								"title":"NumberCookie"
+							},
+							"BooleanCookie":{
+								"type":"boolean",
+								"title":"BooleanCookie"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					}
+				},
+				"endpointType":"REST",
+				"response":[
+					{
+						"status":200,
+						"contentType":"application/json",
+						"textBody":{
+							"type":"string"
+						},
+						"name":"response",
+						"body":{
+							"type":"object",
+							"properties":{
+								"response":{
+									"type":"string",
+									"title":"response"
+								}
+							},
+							"additionalProperties":false,
+							"required":[
+								"response"
+							]
+						}
+					}
+				],
+				"streamingResponse":false
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via API",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":684,
+				"resourceName":"callables_return_response_to_api",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_VhGMl-1",
-			"id":"_AfoxX",
-			"index":0,
+			"id":"n_68kbu",
+			"index":2,
+			"inputs":{
+				"streamingCompleted":true,
+				"responseName":"200_response",
+				"body":{
+					"response":"cool"
+				},
+				"status":200
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to API request",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +132,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":1
 }
