@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120140994,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120153979,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac4459d6b3ed5e68cbc7e7",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac444cd6b3ed5e68cbc6af",
 	"lastModifiedBy":34,
 	"lcName":"replace_code_snippet_117561200835690",
-	"modifiedTime":1756120151315,
+	"modifiedTime":1756120165348,
 	"name":"replace_code_snippet_117561200835690",
 	"nodes":[
 		{
@@ -43,6 +51,43 @@
 					"required":[
 						"output"
 					]
+				},
+				"setup":{
+					"type":"object",
+					"properties":{
+						"product":{
+							"type":"object",
+							"properties":{
+								"id":{
+									"type":"integer",
+									"title":"id"
+								},
+								"name":{
+									"type":"string",
+									"title":"name"
+								},
+								"price":{
+									"type":"number",
+									"title":"price"
+								},
+								"category":{
+									"type":"string",
+									"title":"category"
+								},
+								"stock":{
+									"type":"integer",
+									"title":"stock"
+								},
+								"rating":{
+									"type":"number",
+									"title":"rating"
+								}
+							},
+							"title":"product",
+							"additionalProperties":false
+						}
+					},
+					"additionalProperties":false
 				}
 			},
 			"skip":false,
@@ -61,7 +106,7 @@
 				"type":"APPLICATION"
 			},
 			"debug":false,
-			"dirty":true,
+			"dirty":false,
 			"fallbackMode":"STOP",
 			"groupId":"_8zMyL-1",
 			"id":"n_33FDJ",
@@ -78,7 +123,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac446486133b643003c0e3"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -89,5 +134,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
