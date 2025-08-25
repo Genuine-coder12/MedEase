@@ -3,12 +3,12 @@
 	"createdTime":1756118255829,
 	"deleted":false,
 	"deploymentState":{
-		"deployedAt":1756118270258,
+		"deployedAt":1756118283152,
 		"deployedBy":34,
-		"deployedDefinitionId":"68ac3cfed6b3ed5e68cb77b5",
+		"deployedDefinitionId":"68ac3d0ad6b3ed5e68cb7862",
 		"status":"DEPLOYED",
-		"version":1,
-		"workflowVersion":1
+		"version":2,
+		"workflowVersion":2
 	},
 	"description":"description",
 	"edges":[
@@ -23,10 +23,17 @@
 	"id":"68ac3cefd6b3ed5e68cb7713",
 	"lastModifiedBy":34,
 	"lcName":"create_use_code_snippet_117561180897330",
-	"modifiedTime":1756118280569,
+	"modifiedTime":1756118297500,
 	"name":"create_use_code_snippet_117561180897330",
 	"nodes":[
 		{
+			"additional":{
+				"xsdSchemaConfig":{
+					"root":{
+						
+					}
+				}
+			},
 			"context":{
 				"appName":"callables",
 				"resourceVersion":620,
@@ -53,8 +60,59 @@
 					]
 				},
 				"setup":{
-					"$ref":"#/definitions/entity|e_code_snippet|e_68ac3d083578c438f3ab14a7",
-					"$comment":"json_code_snippet_117561180897330"
+					"type":"object",
+					"properties":{
+						"user":{
+							"type":"object",
+							"properties":{
+								"id":{
+									"type":"integer",
+									"title":"id"
+								},
+								"email_id":{
+									"type":"string",
+									"title":"email_id"
+								},
+								"active":{
+									"type":"boolean",
+									"title":"active"
+								},
+								"designation":{
+									"type":"array",
+									"items":{
+										"type":"string"
+									},
+									"title":"designation"
+								},
+								"profile":{
+									"type":"object",
+									"properties":{
+										"age":{
+											"type":"integer",
+											"title":"age"
+										},
+										"city":{
+											"type":"string",
+											"title":"city"
+										},
+										"gender":{
+											"type":"string",
+											"title":"gender"
+										}
+									},
+									"title":"profile",
+									"additionalProperties":false
+								},
+								"created_at":{
+									"type":"string",
+									"title":"created_at"
+								}
+							},
+							"title":"user",
+							"additionalProperties":false
+						}
+					},
+					"additionalProperties":false
 				}
 			},
 			"skip":false,
@@ -73,7 +131,7 @@
 				"type":"APPLICATION"
 			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_PqWTN-1",
 			"id":"n_nBdWk",
@@ -101,5 +159,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":2
+	"version":3
 }
