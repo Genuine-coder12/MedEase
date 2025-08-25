@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1750281341157,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"68532c7dae040007b1880fc7",
+	"lastModifiedBy":34,
+	"lcName":"automation_trellodelete11750275512637",
+	"modifiedTime":1750515121139,
+	"name":"Automation_TrelloDelete11750275512637",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_S74OI-1",
+			"id":"n_WYyVG",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
