@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120145744,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120164508,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac4464d6b3ed5e68cbc90e",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac4451d6b3ed5e68cbc713",
 	"lastModifiedBy":34,
 	"lcName":"toggle_hidden_query_columns_117561200835690",
-	"modifiedTime":1756120161967,
+	"modifiedTime":1756120178225,
 	"name":"toggle_hidden_query_columns_117561200835690",
 	"nodes":[
 		{
@@ -36,18 +44,6 @@
 					"queryParams":{
 						"type":"object",
 						"properties":{
-							"StringQuery":{
-								"type":"string",
-								"title":"StringQuery"
-							},
-							"NumberQuery":{
-								"type":"number",
-								"title":"NumberQuery"
-							},
-							"IntegerQuery":{
-								"type":"integer",
-								"title":"IntegerQuery"
-							},
 							"BooleanQuery":{
 								"type":"boolean",
 								"title":"BooleanQuery"
@@ -160,5 +156,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
