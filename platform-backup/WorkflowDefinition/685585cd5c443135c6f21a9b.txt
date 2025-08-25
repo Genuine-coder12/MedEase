@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1750435277944,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"685585cd5c443135c6f21a9b",
+	"lastModifiedBy":34,
+	"lcName":"automation_azure document intelligencedelete11750434722338",
+	"modifiedTime":1750513592261,
+	"name":"Automation_Azure Document IntelligenceDelete11750434722338",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_m8I7Q-1",
+			"id":"n_CYu7X",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
