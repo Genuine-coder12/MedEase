@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120088610,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120102536,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac4426d6b3ed5e68cbc2c4",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac4418d6b3ed5e68cbc23b",
 	"lastModifiedBy":34,
 	"lcName":"unlink_automation_code_snippet_117561200835690",
-	"modifiedTime":1756120099939,
+	"modifiedTime":1756120113826,
 	"name":"unlink_automation_code_snippet_117561200835690",
 	"nodes":[
 		{
@@ -43,6 +51,66 @@
 					"required":[
 						"output"
 					]
+				},
+				"setup":{
+					"type":"object",
+					"properties":{
+						"user":{
+							"type":"object",
+							"properties":{
+								"id":{
+									"type":"integer",
+									"title":"id"
+								},
+								"name":{
+									"type":"string",
+									"title":"name"
+								},
+								"email":{
+									"type":"string",
+									"title":"email"
+								},
+								"isActive":{
+									"type":"boolean",
+									"title":"isActive"
+								},
+								"roles":{
+									"type":"array",
+									"items":{
+										"type":"string"
+									},
+									"title":"roles"
+								},
+								"profile":{
+									"type":"object",
+									"properties":{
+										"age":{
+											"type":"integer",
+											"title":"age"
+										},
+										"city":{
+											"type":"string",
+											"title":"city"
+										},
+										"gender":{
+											"type":"string",
+											"title":"gender"
+										}
+									},
+									"title":"profile",
+									"additionalProperties":false
+								},
+								"createdAt":{
+									"type":"string",
+									"title":"createdAt"
+								}
+							},
+							"title":"user",
+							"additionalProperties":false
+						}
+					},
+					"additionalProperties":false,
+					"$comment":"testing_117561200835690"
 				}
 			},
 			"skip":false,
@@ -61,7 +129,7 @@
 				"type":"APPLICATION"
 			},
 			"debug":false,
-			"dirty":true,
+			"dirty":false,
 			"fallbackMode":"STOP",
 			"groupId":"_Dwo4J-1",
 			"id":"n_Buvvh",
@@ -78,7 +146,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac443186133b643003c054"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -89,5 +157,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
