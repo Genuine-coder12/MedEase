@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120142264,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120168347,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac4468d6b3ed5e68cbc95f",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac444ed6b3ed5e68cbc6c4",
 	"lastModifiedBy":34,
 	"lcName":"create_xml_code_snippet_117561200833290",
-	"modifiedTime":1756120165643,
+	"modifiedTime":1756120183497,
 	"name":"create_xml_code_snippet_117561200833290",
 	"nodes":[
 		{
@@ -32,7 +40,11 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"$ref":"#/definitions/entity|e_code_snippet|e_68ac44763578c438f3ab1a3b",
+						"$comment":"xml_code_snippet_rest_117561200833290"
+					}
 				},
 				"endpointType":"REST",
 				"response":[
@@ -96,7 +108,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac44763578c438f3ab1a3b"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -107,5 +119,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
