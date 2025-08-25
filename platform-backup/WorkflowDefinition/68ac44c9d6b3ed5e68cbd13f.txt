@@ -2,49 +2,204 @@
 	"appsUsed":[],
 	"createdTime":1756120265950,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120286981,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44ded6b3ed5e68cbd25b",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_XmFL4",
+			"fromNodeId":"n_zwhMN",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_hQzxS",
+			"toNodeId":"n_LccTx",
 			"type":"next"
 		}
 	],
 	"id":"68ac44c9d6b3ed5e68cbd13f",
 	"lastModifiedBy":34,
 	"lcName":"input_schema_all_params_117561200835690",
-	"modifiedTime":1756120265950,
+	"modifiedTime":1756120298872,
 	"name":"input_schema_all_params_117561200835690",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":693,
+				"resourceName":"callables_from_api"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_XmFL4-1",
-			"id":"_XmFL4",
-			"index":0,
+			"id":"n_zwhMN",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"StringPath":{
+								"type":"string",
+								"title":"StringPath"
+							},
+							"BooleanPath":{
+								"type":"boolean",
+								"title":"BooleanPath"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"queryParams":{
+						"type":"object",
+						"properties":{
+							"NumberQuery":{
+								"type":"number",
+								"title":"NumberQuery"
+							},
+							"ArrayNumberQuery":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								},
+								"title":"ArrayNumberQuery"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"headers":{
+						"type":"object",
+						"properties":{
+							"StringHeader":{
+								"type":"string",
+								"title":"StringHeader"
+							},
+							"ArrayStringHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStringHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"cookies":{
+						"type":"object",
+						"properties":{
+							"StringCookie":{
+								"type":"string",
+								"title":"StringCookie"
+							},
+							"IntegerCookie":{
+								"type":"integer",
+								"title":"IntegerCookie"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"IntegerBody":{
+								"type":"integer",
+								"title":"IntegerBody"
+							},
+							"ArrayIntegerBody":{
+								"type":"array",
+								"items":{
+									"type":"integer"
+								},
+								"title":"ArrayIntegerBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"IntegerBody",
+							"ArrayIntegerBody"
+						]
+					}
+				},
+				"endpointType":"REST",
+				"response":[
+					{
+						"status":200,
+						"contentType":"application/json",
+						"textBody":{
+							"type":"string"
+						},
+						"name":"response",
+						"body":{
+							"type":"object",
+							"properties":{
+								"response":{
+									"type":"string",
+									"title":"response"
+								}
+							},
+							"additionalProperties":false,
+							"required":[
+								"response"
+							]
+						}
+					}
+				],
+				"streamingResponse":false
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via API",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":684,
+				"resourceName":"callables_return_response_to_api",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_XmFL4-1",
-			"id":"_hQzxS",
-			"index":0,
+			"id":"n_LccTx",
+			"index":2,
+			"inputs":{
+				"streamingCompleted":true,
+				"responseName":"200_response",
+				"body":{
+					"response":"cool"
+				},
+				"status":200
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to API request",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +210,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":2
 }
