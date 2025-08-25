@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118094176,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118109622,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3c5bd6b3ed5e68cb7068",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3c4ed6b3ed5e68cb6f7b",
 	"lastModifiedBy":34,
 	"lcName":"replace_webhook_xml_snippet_117561180891160",
-	"modifiedTime":1756118105086,
+	"modifiedTime":1756118121078,
 	"name":"replace_webhook_xml_snippet_117561180891160",
 	"nodes":[
 		{
@@ -32,7 +40,58 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"user":{
+								"type":"object",
+								"properties":{
+									"name":{
+										"type":"string",
+										"title":"name"
+									},
+									"email":{
+										"type":"string",
+										"title":"email"
+									},
+									"address":{
+										"type":"object",
+										"properties":{
+											"street":{
+												"type":"string",
+												"title":"street"
+											},
+											"city":{
+												"type":"string",
+												"title":"city"
+											},
+											"zip":{
+												"type":"integer",
+												"title":"zip"
+											}
+										},
+										"title":"address",
+										"additionalProperties":false
+									},
+									"isActive":{
+										"type":"boolean",
+										"title":"isActive"
+									},
+									"roles":{
+										"type":"array",
+										"items":{
+											"type":"string"
+										},
+										"title":"roles"
+									}
+								},
+								"title":"user",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false
+					}
 				}
 			},
 			"skip":false,
@@ -102,7 +161,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac3c673578c438f3ab1321"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -113,5 +172,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
