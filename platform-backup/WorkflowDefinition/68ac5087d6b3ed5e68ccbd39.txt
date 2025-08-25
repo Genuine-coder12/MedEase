@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756123271271,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756123284802,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac5094d6b3ed5e68ccbf31",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac5087d6b3ed5e68ccbd39",
 	"lastModifiedBy":34,
 	"lcName":"same_input_fields_117561231242360",
-	"modifiedTime":1756123282080,
+	"modifiedTime":1756123293790,
 	"name":"same_input_fields_117561231242360",
 	"nodes":[
 		{
@@ -32,7 +40,72 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"queryParams":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"headers":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"cookies":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"Name"
+						]
+					}
 				},
 				"endpointType":"REST",
 				"response":[
@@ -107,5 +180,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
