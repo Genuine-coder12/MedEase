@@ -2,49 +2,221 @@
 	"appsUsed":[],
 	"createdTime":1756118188680,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118223036,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3ccfd6b3ed5e68cb75df",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_AuGom",
+			"fromNodeId":"n_q4HPm",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_Mpl70",
+			"toNodeId":"n_gSvtB",
 			"type":"next"
 		}
 	],
 	"id":"68ac3cacd6b3ed5e68cb7455",
 	"lastModifiedBy":34,
 	"lcName":"toggle_hidden_request_body_columns_117561180654590",
-	"modifiedTime":1756118188680,
+	"modifiedTime":1756118242532,
 	"name":"toggle_hidden_request_body_columns_117561180654590",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":693,
+				"resourceName":"callables_from_api"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_AuGom-1",
-			"id":"_AuGom",
-			"index":0,
+			"id":"n_q4HPm",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"BooleanBody":{
+								"type":"boolean",
+								"title":"BooleanBody"
+							},
+							"ArrayNumBody":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								},
+								"title":"ArrayNumBody"
+							},
+							"ArrayIntBody":{
+								"type":"array",
+								"items":{
+									"type":"integer"
+								},
+								"title":"ArrayIntBody"
+							},
+							"ArrayBoolBody":{
+								"type":"array",
+								"items":{
+									"type":"boolean"
+								},
+								"title":"ArrayBoolBody"
+							},
+							"ObjectBody":{
+								"type":"object",
+								"properties":{
+									"ObjStrBody":{
+										"type":"string",
+										"title":"ObjStrBody"
+									},
+									"ObjNumBody":{
+										"type":"number",
+										"title":"ObjNumBody"
+									},
+									"ObjArrIntBody":{
+										"type":"array",
+										"items":{
+											"type":"integer"
+										},
+										"title":"ObjArrIntBody"
+									},
+									"ObjArrBoolBody":{
+										"type":"array",
+										"items":{
+											"type":"boolean"
+										},
+										"title":"ObjArrBoolBody"
+									}
+								},
+								"additionalProperties":false,
+								"title":"ObjectBody",
+								"required":[
+									"ObjStrBody",
+									"ObjNumBody",
+									"ObjArrIntBody",
+									"ObjArrBoolBody"
+								]
+							},
+							"ArrayObjBody":{
+								"type":"array",
+								"items":{
+									"type":"object",
+									"properties":{
+										"ArrObjIntBody":{
+											"type":"integer",
+											"title":"ArrObjIntBody"
+										},
+										"ArrObjBoolBody":{
+											"type":"boolean",
+											"title":"ArrObjBoolBody"
+										},
+										"ArrObjStrBody":{
+											"type":"array",
+											"items":{
+												"type":"string"
+											},
+											"title":"ArrObjStrBody"
+										},
+										"ArrObjNumBody":{
+											"type":"array",
+											"items":{
+												"type":"number"
+											},
+											"title":"ArrObjNumBody"
+										}
+									},
+									"additionalProperties":false,
+									"required":[
+										"ArrObjIntBody",
+										"ArrObjBoolBody",
+										"ArrObjStrBody",
+										"ArrObjNumBody"
+									]
+								},
+								"title":"ArrayObjBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"BooleanBody",
+							"ArrayNumBody",
+							"ArrayIntBody",
+							"ArrayBoolBody",
+							"ObjectBody",
+							"ArrayObjBody"
+						]
+					}
+				},
+				"endpointType":"REST",
+				"response":[
+					{
+						"status":200,
+						"contentType":"application/json",
+						"textBody":{
+							"type":"string"
+						},
+						"name":"response",
+						"body":{
+							"type":"object",
+							"properties":{
+								"response":{
+									"type":"string",
+									"title":"response"
+								}
+							},
+							"additionalProperties":false,
+							"required":[
+								"response"
+							]
+						}
+					}
+				],
+				"streamingResponse":false
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via API",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":684,
+				"resourceName":"callables_return_response_to_api",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_AuGom-1",
-			"id":"_Mpl70",
-			"index":0,
+			"id":"n_gSvtB",
+			"index":2,
+			"inputs":{
+				"streamingCompleted":true,
+				"responseName":"200_response",
+				"body":{
+					"response":"cool"
+				},
+				"status":200
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to API request",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +227,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":2
 }
