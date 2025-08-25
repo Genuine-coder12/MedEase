@@ -3,12 +3,12 @@
 	"createdTime":1756123323575,
 	"deleted":false,
 	"deploymentState":{
-		"deployedAt":1756123336565,
+		"deployedAt":1756123347927,
 		"deployedBy":34,
-		"deployedDefinitionId":"68ac50c8d6b3ed5e68ccc65e",
+		"deployedDefinitionId":"68ac50d3d6b3ed5e68ccc826",
 		"status":"DEPLOYED",
-		"version":1,
-		"workflowVersion":1
+		"version":2,
+		"workflowVersion":2
 	},
 	"description":"description",
 	"edges":[
@@ -23,10 +23,19 @@
 	"id":"68ac50bbd6b3ed5e68ccc4ae",
 	"lastModifiedBy":34,
 	"lcName":"create_webhook_code_snippet_117561231279030",
-	"modifiedTime":1756123345280,
+	"modifiedTime":1756123361081,
 	"name":"create_webhook_code_snippet_117561231279030",
 	"nodes":[
 		{
+			"additional":{
+				"xsdSchemaConfig":{
+					"root":{
+						"request":{
+							
+						}
+					}
+				}
+			},
 			"context":{
 				"appName":"webhooks",
 				"resourceVersion":630,
@@ -42,8 +51,52 @@
 				"request":{
 					"contentType":"application/json",
 					"body":{
-						"$ref":"#/definitions/entity|e_code_snippet|e_68ac50d186133b643003cb0c",
-						"$comment":"webhook_snippet_117561231279030"
+						"type":"object",
+						"properties":{
+							"product":{
+								"type":"object",
+								"properties":{
+									"productId":{
+										"type":"integer",
+										"title":"productId"
+									},
+									"productName":{
+										"type":"string",
+										"title":"productName"
+									},
+									"category":{
+										"type":"string",
+										"title":"category"
+									},
+									"price":{
+										"type":"number",
+										"title":"price"
+									},
+									"inStock":{
+										"type":"boolean",
+										"title":"inStock"
+									},
+									"specs":{
+										"type":"object",
+										"properties":{
+											"batteryLife":{
+												"type":"string",
+												"title":"batteryLife"
+											},
+											"bluetoothVersion":{
+												"type":"string",
+												"title":"bluetoothVersion"
+											}
+										},
+										"title":"specs",
+										"additionalProperties":false
+									}
+								},
+								"title":"product",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false
 					}
 				}
 			},
@@ -125,5 +178,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":2
+	"version":3
 }
