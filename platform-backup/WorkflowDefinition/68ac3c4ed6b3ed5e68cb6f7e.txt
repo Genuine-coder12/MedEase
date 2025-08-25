@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118094229,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118109618,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3c5cd6b3ed5e68cb706a",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3c4ed6b3ed5e68cb6f7e",
 	"lastModifiedBy":34,
 	"lcName":"replace_webhook_code_snippet_117561180891160",
-	"modifiedTime":1756118105514,
+	"modifiedTime":1756118124096,
 	"name":"replace_webhook_code_snippet_117561180891160",
 	"nodes":[
 		{
@@ -32,7 +40,44 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"product":{
+								"type":"object",
+								"properties":{
+									"id":{
+										"type":"integer",
+										"title":"id"
+									},
+									"name":{
+										"type":"string",
+										"title":"name"
+									},
+									"price":{
+										"type":"number",
+										"title":"price"
+									},
+									"category":{
+										"type":"string",
+										"title":"category"
+									},
+									"stock":{
+										"type":"integer",
+										"title":"stock"
+									},
+									"rating":{
+										"type":"number",
+										"title":"rating"
+									}
+								},
+								"title":"product",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false
+					}
 				}
 			},
 			"skip":false,
@@ -102,7 +147,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac3c6b3578c438f3ab1335"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -113,5 +158,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
