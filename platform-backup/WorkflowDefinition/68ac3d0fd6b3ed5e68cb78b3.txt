@@ -2,49 +2,110 @@
 	"appsUsed":[],
 	"createdTime":1756118287956,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118299549,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3d1bd6b3ed5e68cb795d",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_fkkPH",
+			"fromNodeId":"n_jMkHV",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_SJNUx",
+			"toNodeId":"n_IVVax",
 			"type":"next"
 		}
 	],
 	"id":"68ac3d0fd6b3ed5e68cb78b3",
 	"lastModifiedBy":34,
 	"lcName":"create_code_snippet_117561180901870",
-	"modifiedTime":1756118287956,
+	"modifiedTime":1756118309876,
 	"name":"create_code_snippet_117561180901870",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":693,
+				"resourceName":"callables_from_api"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_fkkPH-1",
-			"id":"_fkkPH",
-			"index":0,
+			"id":"n_jMkHV",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"body":{
+						"$ref":"#/definitions/entity|e_code_snippet|e_68ac3d2586133b643003bb28",
+						"$comment":"json_snippet_soap_117561180901870"
+					}
+				},
+				"endpointType":"SOAP",
+				"response":[
+					{
+						"status":200,
+						"name":"success",
+						"body":{
+							"type":"object",
+							"properties":{
+								"output":{
+									"type":"string",
+									"title":"output"
+								}
+							},
+							"additionalProperties":false,
+							"required":[
+								"output"
+							]
+						}
+					}
+				],
+				"soapVersion":"v1.2",
+				"streamingResponse":false
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via API",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":684,
+				"resourceName":"callables_return_response_to_api",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_fkkPH-1",
-			"id":"_SJNUx",
-			"index":0,
+			"id":"n_IVVax",
+			"index":2,
+			"inputs":{
+				"streamingCompleted":true,
+				"responseName":"200_success",
+				"body":{
+					"output":"Success"
+				},
+				"status":200
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to API request",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":["entity|e_code_snippet|e_68ac3d2586133b643003bb28"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +116,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":2
 }
