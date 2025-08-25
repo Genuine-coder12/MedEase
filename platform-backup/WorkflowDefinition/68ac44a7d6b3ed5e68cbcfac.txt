@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120231351,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120244736,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44b4d6b3ed5e68cbd029",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac44a7d6b3ed5e68cbcfac",
 	"lastModifiedBy":34,
 	"lcName":"same_input_fields_with_different_data_type_117561200835690",
-	"modifiedTime":1756120242131,
+	"modifiedTime":1756120254095,
 	"name":"same_input_fields_with_different_data_type_117561200835690",
 	"nodes":[
 		{
@@ -32,7 +40,78 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"queryParams":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"integer",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"headers":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"cookies":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"boolean",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"array",
+								"items":{
+									"type":"boolean"
+								},
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"Name"
+						]
+					}
 				},
 				"endpointType":"REST",
 				"response":[
@@ -107,5 +186,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
