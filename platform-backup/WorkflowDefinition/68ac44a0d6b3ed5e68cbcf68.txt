@@ -5,46 +5,106 @@
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_HcQ20",
+			"fromNodeId":"n_S2S4W",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_hYNgZ",
+			"toNodeId":"n_lWcDb",
 			"type":"next"
 		}
 	],
 	"id":"68ac44a0d6b3ed5e68cbcf68",
 	"lastModifiedBy":34,
 	"lcName":"parent automation_117561200819960",
-	"modifiedTime":1756120224902,
+	"modifiedTime":1756120246766,
 	"name":"Parent automation_117561200819960",
 	"nodes":[
 		{
+			"context":{
+				"appName":"webhooks",
+				"resourceVersion":630,
+				"resourceName":"webhooks_default"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_HcQ20-1",
-			"id":"_HcQ20",
-			"index":0,
+			"id":"n_S2S4W",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"StringBody":{
+								"type":"string",
+								"title":"StringBody"
+							},
+							"NumberBody":{
+								"type":"number",
+								"title":"NumberBody"
+							},
+							"IntegerBody":{
+								"type":"integer",
+								"title":"IntegerBody"
+							},
+							"BooleanBody":{
+								"type":"boolean",
+								"title":"BooleanBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"StringBody",
+							"NumberBody",
+							"IntegerBody",
+							"BooleanBody"
+						]
+					}
+				}
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Webhook",
+			"title":"New event",
 			"trigger":{
-				"type":"EVENT"
+				"type":"WEBHOOK"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":635,
+				"resourceName":"callables_call_automation_async",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_HcQ20-1",
-			"id":"_hYNgZ",
-			"index":0,
+			"id":"n_lWcDb",
+			"index":2,
+			"inputs":{
+				"automationId":"68ac448ad6b3ed5e68cbcd64",
+				"runtimeConnections":{
+					
+				},
+				"version":"-1",
+				"parameters":{
+					"StringBody":"{{ n_S2S4W.outputs.body.StringBody }}",
+					"NumberBody":"{{ n_S2S4W.outputs.body.NumberBody }}",
+					"IntegerBody":"{{ n_S2S4W.outputs.body.IntegerBody }}",
+					"BooleanBody":"{{ n_S2S4W.outputs.body.BooleanBody }}"
+				}
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Call automation async",
+			"type":"CALL_WORKFLOW"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +115,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":1
 }
