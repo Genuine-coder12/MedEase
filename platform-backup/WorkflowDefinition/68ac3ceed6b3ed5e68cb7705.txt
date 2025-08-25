@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118254685,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118278743,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3d06d6b3ed5e68cb7816",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3ceed6b3ed5e68cb7705",
 	"lastModifiedBy":34,
 	"lcName":"input_schema_webhook_117561181005070",
-	"modifiedTime":1756118275563,
+	"modifiedTime":1756118290139,
 	"name":"input_schema_webhook_117561181005070",
 	"nodes":[
 		{
@@ -32,7 +40,61 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"headers":{
+						"type":"object",
+						"properties":{
+							"StrHeader":{
+								"type":"string",
+								"title":"StrHeader"
+							},
+							"ArrayStrHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStrHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							},
+							"Age":{
+								"type":"number",
+								"title":"Age"
+							},
+							"ArrayIntBody":{
+								"type":"array",
+								"items":{
+									"type":"integer"
+								},
+								"title":"ArrayIntBody"
+							},
+							"ArrayStrBody":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStrBody"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"Name",
+							"Age",
+							"ArrayIntBody",
+							"ArrayStrBody"
+						]
+					}
 				}
 			},
 			"skip":false,
@@ -113,5 +175,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
