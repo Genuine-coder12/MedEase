@@ -1,0 +1,56 @@
+{
+	"appsUsed":[],
+	"createdTime":1750335581737,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_gjjSU",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_r4KuM",
+			"type":"next"
+		}
+	],
+	"id":"6854005dc629c934b666ef1b",
+	"lastModifiedBy":34,
+	"lcName":"hook-enable11750333147660",
+	"modifiedTime":1750514345159,
+	"name":"Hook-enable11750333147660",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_gjjSU-1",
+			"id":"_gjjSU",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_gjjSU-1",
+			"id":"_r4KuM",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
