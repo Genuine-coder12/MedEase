@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120214912,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120249977,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44b9d6b3ed5e68cbd05d",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac4496d6b3ed5e68cbce91",
 	"lastModifiedBy":34,
 	"lcName":"toggle_webhook_request_body_fields_117561200823130",
-	"modifiedTime":1756120247210,
+	"modifiedTime":1756120271694,
 	"name":"toggle_webhook_request_body_fields_117561200823130",
 	"nodes":[
 		{
@@ -36,18 +44,6 @@
 					"body":{
 						"type":"object",
 						"properties":{
-							"StringBody":{
-								"type":"string",
-								"title":"StringBody"
-							},
-							"NumberBody":{
-								"type":"number",
-								"title":"NumberBody"
-							},
-							"IntegerBody":{
-								"type":"integer",
-								"title":"IntegerBody"
-							},
 							"BooleanBody":{
 								"type":"boolean",
 								"title":"BooleanBody"
@@ -156,9 +152,6 @@
 						},
 						"additionalProperties":false,
 						"required":[
-							"StringBody",
-							"NumberBody",
-							"IntegerBody",
 							"BooleanBody",
 							"ObjectBody",
 							"ArrayStrBody",
@@ -248,5 +241,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
