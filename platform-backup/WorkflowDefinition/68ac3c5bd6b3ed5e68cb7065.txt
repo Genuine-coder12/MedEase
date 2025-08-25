@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118107398,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118126294,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3c6ed6b3ed5e68cb7114",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3c5bd6b3ed5e68cb7065",
 	"lastModifiedBy":34,
 	"lcName":"change_code_snippet_117561181005070",
-	"modifiedTime":1756118123615,
+	"modifiedTime":1756118143490,
 	"name":"change_code_snippet_117561181005070",
 	"nodes":[
 		{
@@ -32,7 +40,88 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"name":{
+								"type":"string",
+								"title":"name"
+							},
+							"skills":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"skills"
+							},
+							"address":{
+								"type":"object",
+								"properties":{
+									"city":{
+										"type":"string",
+										"title":"city"
+									},
+									"zip":{
+										"type":"integer",
+										"title":"zip"
+									},
+									"country":{
+										"type":"string",
+										"title":"country"
+									}
+								},
+								"title":"address",
+								"additionalProperties":false
+							},
+							"education":{
+								"type":"object",
+								"properties":{
+									"degree":{
+										"type":"string",
+										"title":"degree"
+									},
+									"university":{
+										"type":"string",
+										"title":"university"
+									},
+									"graduationYear":{
+										"type":"integer",
+										"title":"graduationYear"
+									}
+								},
+								"title":"education",
+								"additionalProperties":false
+							},
+							"job":{
+								"type":"object",
+								"properties":{
+									"title":{
+										"type":"string",
+										"title":"title"
+									},
+									"company":{
+										"type":"string",
+										"title":"company"
+									},
+									"experience":{
+										"type":"integer",
+										"title":"experience"
+									},
+									"technologies":{
+										"type":"array",
+										"items":{
+											"type":"string"
+										},
+										"title":"technologies"
+									}
+								},
+								"title":"job",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false
+					}
 				},
 				"endpointType":"SOAP",
 				"response":[
@@ -93,7 +182,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac3c7d86133b643003b919"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -104,5 +193,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
