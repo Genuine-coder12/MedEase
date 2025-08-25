@@ -5,46 +5,126 @@
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_RQ80D",
+			"fromNodeId":"n_pPHd1",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_uBlGc",
+			"toNodeId":"n_raP4S",
 			"type":"next"
 		}
 	],
 	"id":"68ac4437d6b3ed5e68cbc38c",
 	"lastModifiedBy":34,
 	"lcName":"hidden_path_columns_117561200835690",
-	"modifiedTime":1756120119915,
+	"modifiedTime":1756120140847,
 	"name":"hidden_path_columns_117561200835690",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":693,
+				"resourceName":"callables_from_api"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_RQ80D-1",
-			"id":"_RQ80D",
-			"index":0,
+			"id":"n_pPHd1",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"StringParam":{
+								"type":"string",
+								"title":"StringParam"
+							},
+							"NumberParam":{
+								"type":"number",
+								"title":"NumberParam"
+							},
+							"BooleanParam":{
+								"type":"boolean",
+								"title":"BooleanParam"
+							},
+							"ArrayParam":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayParam"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					}
+				},
+				"endpointType":"REST",
+				"response":[
+					{
+						"status":200,
+						"contentType":"application/json",
+						"textBody":{
+							"type":"string"
+						},
+						"name":"response",
+						"body":{
+							"type":"object",
+							"properties":{
+								"response":{
+									"type":"string",
+									"title":"response"
+								}
+							},
+							"additionalProperties":false,
+							"required":[
+								"response"
+							]
+						}
+					}
+				],
+				"streamingResponse":false
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via API",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":684,
+				"resourceName":"callables_return_response_to_api",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_RQ80D-1",
-			"id":"_uBlGc",
-			"index":0,
+			"id":"n_raP4S",
+			"index":2,
+			"inputs":{
+				"streamingCompleted":true,
+				"responseName":"200_response",
+				"body":{
+					"response":"cool"
+				},
+				"status":200
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to API request",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +135,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":1
 }
