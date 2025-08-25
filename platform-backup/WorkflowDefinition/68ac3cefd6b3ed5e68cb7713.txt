@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118255829,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118270258,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3cfed6b3ed5e68cb77b5",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3cefd6b3ed5e68cb7713",
 	"lastModifiedBy":34,
 	"lcName":"create_use_code_snippet_117561180897330",
-	"modifiedTime":1756118267687,
+	"modifiedTime":1756118280569,
 	"name":"create_use_code_snippet_117561180897330",
 	"nodes":[
 		{
@@ -43,6 +51,10 @@
 					"required":[
 						"output"
 					]
+				},
+				"setup":{
+					"$ref":"#/definitions/entity|e_code_snippet|e_68ac3d083578c438f3ab14a7",
+					"$comment":"json_code_snippet_117561180897330"
 				}
 			},
 			"skip":false,
@@ -61,7 +73,7 @@
 				"type":"APPLICATION"
 			},
 			"debug":false,
-			"dirty":true,
+			"dirty":false,
 			"fallbackMode":"STOP",
 			"groupId":"_PqWTN-1",
 			"id":"n_nBdWk",
@@ -78,7 +90,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac3d083578c438f3ab14a7"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -89,5 +101,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
