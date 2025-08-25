@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120288076,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120302526,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44eed6b3ed5e68cbd306",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac44e0d6b3ed5e68cbd263",
 	"lastModifiedBy":34,
 	"lcName":"unlink_webhook_code_snippet_117561200823130",
-	"modifiedTime":1756120299696,
+	"modifiedTime":1756120311957,
 	"name":"unlink_webhook_code_snippet_117561200823130",
 	"nodes":[
 		{
@@ -32,7 +40,67 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"user":{
+								"type":"object",
+								"properties":{
+									"id":{
+										"type":"integer",
+										"title":"id"
+									},
+									"name":{
+										"type":"string",
+										"title":"name"
+									},
+									"email":{
+										"type":"string",
+										"title":"email"
+									},
+									"isActive":{
+										"type":"boolean",
+										"title":"isActive"
+									},
+									"roles":{
+										"type":"array",
+										"items":{
+											"type":"string"
+										},
+										"title":"roles"
+									},
+									"profile":{
+										"type":"object",
+										"properties":{
+											"age":{
+												"type":"integer",
+												"title":"age"
+											},
+											"city":{
+												"type":"string",
+												"title":"city"
+											},
+											"gender":{
+												"type":"string",
+												"title":"gender"
+											}
+										},
+										"title":"profile",
+										"additionalProperties":false
+									},
+									"createdAt":{
+										"type":"string",
+										"title":"createdAt"
+									}
+								},
+								"title":"user",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false,
+						"$comment":"webhook_testing_117561200823130"
+					}
 				}
 			},
 			"skip":false,
@@ -102,7 +170,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac44f73578c438f3ab1b52"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -113,5 +181,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
