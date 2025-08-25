@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120142327,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120159393,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac445fd6b3ed5e68cbc8aa",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac444ed6b3ed5e68cbc6c5",
 	"lastModifiedBy":34,
 	"lcName":"code_snippet_117561200833290",
-	"modifiedTime":1756120156711,
+	"modifiedTime":1756120172699,
 	"name":"code_snippet_117561200833290",
 	"nodes":[
 		{
@@ -32,7 +40,65 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"library":{
+								"type":"object",
+								"properties":{
+									"title":{
+										"type":"string",
+										"title":"title"
+									},
+									"totalBooks":{
+										"type":"integer",
+										"title":"totalBooks"
+									},
+									"averageRating":{
+										"type":"number",
+										"title":"averageRating"
+									},
+									"isAvailable":{
+										"type":"boolean",
+										"title":"isAvailable"
+									},
+									"publisher":{
+										"type":"object",
+										"properties":{
+											"name":{
+												"type":"string",
+												"title":"name"
+											},
+											"location":{
+												"type":"string",
+												"title":"location"
+											}
+										},
+										"title":"publisher",
+										"additionalProperties":false
+									},
+									"genres":{
+										"type":"object",
+										"properties":{
+											"genre":{
+												"type":"array",
+												"items":{
+													"type":"string"
+												},
+												"title":"genre"
+											}
+										},
+										"title":"genres",
+										"additionalProperties":false
+									}
+								},
+								"title":"library",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false
+					}
 				},
 				"endpointType":"REST",
 				"response":[
@@ -96,7 +162,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac446a86133b643003c111"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -107,5 +173,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
