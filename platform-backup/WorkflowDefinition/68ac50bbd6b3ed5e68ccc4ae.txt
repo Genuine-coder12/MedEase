@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756123323575,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756123336565,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac50c8d6b3ed5e68ccc65e",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac50bbd6b3ed5e68ccc4ae",
 	"lastModifiedBy":34,
 	"lcName":"create_webhook_code_snippet_117561231279030",
-	"modifiedTime":1756123333713,
+	"modifiedTime":1756123345280,
 	"name":"create_webhook_code_snippet_117561231279030",
 	"nodes":[
 		{
@@ -32,7 +40,11 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"$ref":"#/definitions/entity|e_code_snippet|e_68ac50d186133b643003cb0c",
+						"$comment":"webhook_snippet_117561231279030"
+					}
 				}
 			},
 			"skip":false,
@@ -102,7 +114,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac50d186133b643003cb0c"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -113,5 +125,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
