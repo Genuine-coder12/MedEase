@@ -2,49 +2,122 @@
 	"appsUsed":[],
 	"createdTime":1756120191650,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120218439,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac449ad6b3ed5e68cbcec8",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_CUAHI",
+			"fromNodeId":"n_iQGYO",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_uPy2X",
+			"toNodeId":"n_Qufcl",
 			"type":"next"
 		}
 	],
 	"id":"68ac447fd6b3ed5e68cbcc56",
 	"lastModifiedBy":34,
 	"lcName":"hidden_soap_header_columns_117561200833290",
-	"modifiedTime":1756120191650,
+	"modifiedTime":1756120226803,
 	"name":"hidden_soap_header_columns_117561200833290",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":693,
+				"resourceName":"callables_from_api"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_CUAHI-1",
-			"id":"_CUAHI",
-			"index":0,
+			"id":"n_iQGYO",
+			"index":1,
+			"inputs":{
+				"request":{
+					"contentType":"application/json",
+					"headers":{
+						"type":"object",
+						"properties":{
+							"ArrayStrHeader":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								},
+								"title":"ArrayStrHeader"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					}
+				},
+				"endpointType":"SOAP",
+				"response":[
+					{
+						"status":200,
+						"name":"success",
+						"body":{
+							"type":"object",
+							"properties":{
+								"output":{
+									"type":"string",
+									"title":"output"
+								}
+							},
+							"additionalProperties":false,
+							"required":[
+								"output"
+							]
+						}
+					}
+				],
+				"soapVersion":"v1.2",
+				"streamingResponse":false
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via API",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":684,
+				"resourceName":"callables_return_response_to_api",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_CUAHI-1",
-			"id":"_uPy2X",
-			"index":0,
+			"id":"n_Qufcl",
+			"index":2,
+			"inputs":{
+				"streamingCompleted":true,
+				"responseName":"200_success",
+				"body":{
+					"output":"Success"
+				},
+				"status":200
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to API request",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +128,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":2
 }
