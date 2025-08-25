@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120212047,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120247910,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44b7d6b3ed5e68cbd04a",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac4494d6b3ed5e68cbce35",
 	"lastModifiedBy":34,
 	"lcName":"toggle_hidden_soap_request_columns_117561200833290",
-	"modifiedTime":1756120244952,
+	"modifiedTime":1756120268303,
 	"name":"toggle_hidden_soap_request_columns_117561200833290",
 	"nodes":[
 		{
@@ -36,18 +44,6 @@
 					"body":{
 						"type":"object",
 						"properties":{
-							"StringBody":{
-								"type":"string",
-								"title":"StringBody"
-							},
-							"NumberBody":{
-								"type":"number",
-								"title":"NumberBody"
-							},
-							"IntegerBody":{
-								"type":"integer",
-								"title":"IntegerBody"
-							},
 							"BooleanBody":{
 								"type":"boolean",
 								"title":"BooleanBody"
@@ -156,9 +152,6 @@
 						},
 						"additionalProperties":false,
 						"required":[
-							"StringBody",
-							"NumberBody",
-							"IntegerBody",
 							"BooleanBody",
 							"ObjectBody",
 							"ArrayStrBody",
@@ -239,5 +232,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
