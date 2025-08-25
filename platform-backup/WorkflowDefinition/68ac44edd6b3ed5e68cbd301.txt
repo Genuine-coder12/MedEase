@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756120301441,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756120311908,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac44f7d6b3ed5e68cbd406",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac44edd6b3ed5e68cbd301",
 	"lastModifiedBy":34,
 	"lcName":"change_code_snippet_117561200961240",
-	"modifiedTime":1756120309245,
+	"modifiedTime":1756120322461,
 	"name":"change_code_snippet_117561200961240",
 	"nodes":[
 		{
@@ -43,6 +51,57 @@
 					"required":[
 						"output"
 					]
+				},
+				"setup":{
+					"type":"object",
+					"properties":{
+						"user":{
+							"type":"object",
+							"properties":{
+								"name":{
+									"type":"string",
+									"title":"name"
+								},
+								"email":{
+									"type":"string",
+									"title":"email"
+								},
+								"address":{
+									"type":"object",
+									"properties":{
+										"street":{
+											"type":"string",
+											"title":"street"
+										},
+										"city":{
+											"type":"string",
+											"title":"city"
+										},
+										"zip":{
+											"type":"integer",
+											"title":"zip"
+										}
+									},
+									"title":"address",
+									"additionalProperties":false
+								},
+								"isActive":{
+									"type":"boolean",
+									"title":"isActive"
+								},
+								"roles":{
+									"type":"array",
+									"items":{
+										"type":"string"
+									},
+									"title":"roles"
+								}
+							},
+							"title":"user",
+							"additionalProperties":false
+						}
+					},
+					"additionalProperties":false
 				}
 			},
 			"skip":false,
@@ -61,7 +120,7 @@
 				"type":"APPLICATION"
 			},
 			"debug":false,
-			"dirty":true,
+			"dirty":false,
 			"fallbackMode":"STOP",
 			"groupId":"_M1ZQB-1",
 			"id":"n_AJq7a",
@@ -78,7 +137,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac45013578c438f3ab1b7d"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -89,5 +148,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
