@@ -1,0 +1,44 @@
+{
+	"appsUsed":[],
+	"createdTime":1750416789347,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"68553d95069906395a78dbd8",
+	"lastModifiedBy":34,
+	"lcName":"delete workflow - 11750416513391",
+	"modifiedTime":1750513999996,
+	"name":"delete workflow - 11750416513391",
+	"nodes":[
+		{
+			"context":{
+				"appName":"callables"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_V5jpI-1",
+			"id":"n_zNtAN",
+			"index":0,
+			"skip":false,
+			"subTitle":"Callable",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"CALLABLE"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":2
+}
