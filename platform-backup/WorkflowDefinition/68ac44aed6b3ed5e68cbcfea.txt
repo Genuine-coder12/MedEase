@@ -5,46 +5,251 @@
 	"description":"description",
 	"edges":[
 		{
-			"fromNodeId":"_XX8on",
+			"fromNodeId":"n_qmmlV",
 			"priority":0,
 			"skip":false,
-			"toNodeId":"_NY62X",
+			"toNodeId":"n_Pu552",
 			"type":"next"
 		}
 	],
 	"id":"68ac44aed6b3ed5e68cbcfea",
 	"lastModifiedBy":34,
 	"lcName":"input_schema_arrays_117561200961240",
-	"modifiedTime":1756120238707,
+	"modifiedTime":1756120264694,
 	"name":"input_schema_arrays_117561200961240",
 	"nodes":[
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":620,
+				"resourceName":"callables_from_automation"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_XX8on-1",
-			"id":"_XX8on",
-			"index":0,
+			"id":"n_qmmlV",
+			"index":1,
+			"inputs":{
+				"setup":{
+					"type":"object",
+					"properties":{
+						"Profile":{
+							"type":"object",
+							"properties":{
+								"StringField":{
+									"type":"string",
+									"title":"StringField"
+								},
+								"IntegerField":{
+									"type":"integer",
+									"title":"IntegerField"
+								},
+								"BooleanField":{
+									"type":"boolean",
+									"title":"BooleanField"
+								},
+								"DateField":{
+									"type":"string",
+									"format":"date",
+									"title":"DateField",
+									"disablePast":false
+								},
+								"ArrayStrField":{
+									"type":"array",
+									"items":{
+										"type":"string"
+									},
+									"title":"ArrayStrField"
+								},
+								"ArrayNumField":{
+									"type":"array",
+									"items":{
+										"type":"number"
+									},
+									"title":"ArrayNumField"
+								},
+								"ArrayIntField":{
+									"type":"array",
+									"items":{
+										"type":"integer"
+									},
+									"title":"ArrayIntField"
+								},
+								"ArrayBoolField":{
+									"type":"array",
+									"items":{
+										"type":"boolean"
+									},
+									"title":"ArrayBoolField"
+								},
+								"ObjectField":{
+									"type":"object",
+									"properties":{
+										
+									},
+									"additionalProperties":false,
+									"title":"ObjectField"
+								},
+								"ArrayObjField":{
+									"type":"array",
+									"items":{
+										"type":"object",
+										"properties":{
+											
+										},
+										"additionalProperties":false
+									},
+									"title":"ArrayObjField"
+								}
+							},
+							"additionalProperties":false,
+							"title":"Profile",
+							"required":[
+								"StringField",
+								"IntegerField",
+								"BooleanField",
+								"DateField",
+								"ArrayStrField",
+								"ArrayNumField",
+								"ArrayIntField",
+								"ArrayBoolField",
+								"ObjectField",
+								"ArrayObjField"
+							]
+						},
+						"Addresses":{
+							"type":"array",
+							"items":{
+								"type":"object",
+								"properties":{
+									"StringFieldArray":{
+										"type":"string",
+										"title":"StringFieldArray"
+									},
+									"IntegerFieldArray":{
+										"type":"integer",
+										"title":"IntegerFieldArray"
+									},
+									"BooleanFieldArray":{
+										"type":"boolean",
+										"title":"BooleanFieldArray"
+									},
+									"NumberFieldArray":{
+										"type":"number",
+										"title":"NumberFieldArray"
+									},
+									"DateFieldArray":{
+										"type":"string",
+										"format":"date",
+										"title":"DateFieldArray",
+										"disablePast":false
+									},
+									"ArrayStrFieldArray":{
+										"type":"array",
+										"items":{
+											"type":"string"
+										},
+										"title":"ArrayStrFieldArray"
+									},
+									"ArrayNumFieldArray":{
+										"type":"array",
+										"items":{
+											"type":"number"
+										},
+										"title":"ArrayNumFieldArray"
+									},
+									"ArrayIntFieldArray":{
+										"type":"array",
+										"items":{
+											"type":"integer"
+										},
+										"title":"ArrayIntFieldArray"
+									},
+									"ArrayBoolFieldArray":{
+										"type":"array",
+										"items":{
+											"type":"boolean"
+										},
+										"title":"ArrayBoolFieldArray"
+									},
+									"ObjectFieldArray":{
+										"type":"object",
+										"properties":{
+											
+										},
+										"additionalProperties":false,
+										"title":"ObjectFieldArray"
+									},
+									"ArrayObjFieldArray":{
+										"type":"array",
+										"items":{
+											"type":"object",
+											"properties":{
+												
+											},
+											"additionalProperties":false
+										},
+										"title":"ArrayObjFieldArray"
+									}
+								},
+								"additionalProperties":false,
+								"required":[
+									"StringFieldArray",
+									"IntegerFieldArray",
+									"BooleanFieldArray",
+									"NumberFieldArray",
+									"DateFieldArray",
+									"ArrayStrFieldArray",
+									"ArrayNumFieldArray",
+									"ArrayIntFieldArray",
+									"ArrayBoolFieldArray",
+									"ObjectFieldArray",
+									"ArrayObjFieldArray"
+								]
+							},
+							"title":"Addresses"
+						}
+					},
+					"additionalProperties":false,
+					"required":[
+						"Profile",
+						"Addresses"
+					]
+				}
+			},
 			"skip":false,
-			"title":"Select a trigger event",
+			"subTitle":"Callable",
+			"title":"Trigger via automation",
 			"trigger":{
-				"type":"EVENT"
+				"type":"CALLABLE"
 			},
 			"type":"START"
 		},
 		{
+			"context":{
+				"appName":"callables",
+				"resourceVersion":663,
+				"resourceName":"callables_return_to_automation",
+				"type":"APPLICATION"
+			},
 			"debug":false,
-			"dirty":false,
+			"dirty":true,
 			"fallbackMode":"STOP",
 			"groupId":"_XX8on-1",
-			"id":"_NY62X",
-			"index":0,
+			"id":"n_Pu552",
+			"index":2,
+			"inputs":{
+				"result":"cool"
+			},
 			"skip":false,
-			"title":"Select an app and action",
-			"type":"ACTION"
+			"subTitle":"Callable",
+			"title":"Respond to automation",
+			"type":"STOP"
 		}
 	],
 	"ownerUserId":34,
+	"schemaReferences":[],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -55,5 +260,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":0
+	"version":1
 }
