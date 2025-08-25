@@ -1,0 +1,57 @@
+{
+	"appsUsed":[],
+	"createdTime":1750408835496,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		{
+			"fromNodeId":"_YCUzy",
+			"priority":0,
+			"skip":false,
+			"toNodeId":"_gkwCs",
+			"type":"next"
+		}
+	],
+	"id":"68551e83d835d7284748cddc",
+	"lastModifiedBy":34,
+	"lcName":"workflowinsideproject-false-117504061513240",
+	"modifiedTime":1750514032508,
+	"name":"workflowInsideProject-false-117504061513240",
+	"nodes":[
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_YCUzy-1",
+			"id":"_YCUzy",
+			"index":0,
+			"skip":false,
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		},
+		{
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_YCUzy-1",
+			"id":"_gkwCs",
+			"index":0,
+			"skip":false,
+			"title":"Select an app and action",
+			"type":"ACTION"
+		}
+	],
+	"ownerUserId":34,
+	"projectId":13,
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":1
+}
