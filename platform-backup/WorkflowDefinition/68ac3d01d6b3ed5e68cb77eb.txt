@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118273879,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118288900,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3d10d6b3ed5e68cb78ba",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3d01d6b3ed5e68cb77eb",
 	"lastModifiedBy":34,
 	"lcName":"same_input_fields_117561181005070",
-	"modifiedTime":1756118286036,
+	"modifiedTime":1756118296992,
 	"name":"same_input_fields_117561181005070",
 	"nodes":[
 		{
@@ -32,7 +40,59 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"pathParams":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"queryParams":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"headers":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							
+						]
+					},
+					"body":{
+						"type":"object",
+						"properties":{
+							"Name":{
+								"type":"string",
+								"title":"Name"
+							}
+						},
+						"additionalProperties":false,
+						"required":[
+							"Name"
+						]
+					}
 				}
 			},
 			"skip":false,
@@ -113,5 +173,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
