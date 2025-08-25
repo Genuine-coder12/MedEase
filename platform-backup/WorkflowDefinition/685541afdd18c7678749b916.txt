@@ -1,0 +1,44 @@
+{
+	"appsUsed":["shopify"],
+	"createdTime":1750417839558,
+	"deleted":true,
+	"description":"description",
+	"edges":[
+		
+	],
+	"id":"685541afdd18c7678749b916",
+	"lastModifiedBy":34,
+	"lcName":"automation_post office protocol v3delete11750416514555",
+	"modifiedTime":1750513903248,
+	"name":"Automation_Post Office Protocol V3Delete11750416514555",
+	"nodes":[
+		{
+			"context":{
+				"appName":"shopify"
+			},
+			"debug":false,
+			"dirty":false,
+			"fallbackMode":"STOP",
+			"groupId":"_Z1agf-1",
+			"id":"n_ghQjC",
+			"index":0,
+			"skip":false,
+			"subTitle":"Shopify",
+			"title":"Select a trigger event",
+			"trigger":{
+				"type":"EVENT"
+			},
+			"type":"START"
+		}
+	],
+	"ownerUserId":34,
+	"schemaReferences":[],
+	"settings":{
+		"enableNodeLevelLogging":true,
+		"enableRunLogging":true,
+		"enableVariableLogging":true
+	},
+	"standard":false,
+	"tags":[],
+	"version":3
+}
