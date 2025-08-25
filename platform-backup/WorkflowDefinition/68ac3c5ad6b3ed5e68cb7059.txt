@@ -2,6 +2,14 @@
 	"appsUsed":[],
 	"createdTime":1756118106665,
 	"deleted":false,
+	"deploymentState":{
+		"deployedAt":1756118125600,
+		"deployedBy":34,
+		"deployedDefinitionId":"68ac3c6dd6b3ed5e68cb7110",
+		"status":"DEPLOYED",
+		"version":1,
+		"workflowVersion":1
+	},
 	"description":"description",
 	"edges":[
 		{
@@ -15,7 +23,7 @@
 	"id":"68ac3c5ad6b3ed5e68cb7059",
 	"lastModifiedBy":34,
 	"lcName":"unlink_soap_code_snippet_117561181005070",
-	"modifiedTime":1756118122616,
+	"modifiedTime":1756118140715,
 	"name":"unlink_soap_code_snippet_117561181005070",
 	"nodes":[
 		{
@@ -32,7 +40,67 @@
 			"index":1,
 			"inputs":{
 				"request":{
-					"contentType":"application/json"
+					"contentType":"application/json",
+					"body":{
+						"type":"object",
+						"properties":{
+							"user":{
+								"type":"object",
+								"properties":{
+									"id":{
+										"type":"integer",
+										"title":"id"
+									},
+									"name":{
+										"type":"string",
+										"title":"name"
+									},
+									"email":{
+										"type":"string",
+										"title":"email"
+									},
+									"isActive":{
+										"type":"boolean",
+										"title":"isActive"
+									},
+									"roles":{
+										"type":"array",
+										"items":{
+											"type":"string"
+										},
+										"title":"roles"
+									},
+									"profile":{
+										"type":"object",
+										"properties":{
+											"age":{
+												"type":"integer",
+												"title":"age"
+											},
+											"city":{
+												"type":"string",
+												"title":"city"
+											},
+											"gender":{
+												"type":"string",
+												"title":"gender"
+											}
+										},
+										"title":"profile",
+										"additionalProperties":false
+									},
+									"createdAt":{
+										"type":"string",
+										"title":"createdAt"
+									}
+								},
+								"title":"user",
+								"additionalProperties":false
+							}
+						},
+						"additionalProperties":false,
+						"$comment":"testing_117561181005070"
+					}
 				},
 				"endpointType":"SOAP",
 				"response":[
@@ -93,7 +161,7 @@
 		}
 	],
 	"ownerUserId":34,
-	"schemaReferences":[],
+	"schemaReferences":["entity|e_code_snippet|e_68ac3c7b86133b643003b905"],
 	"settings":{
 		"enableNodeLevelLogging":true,
 		"enableRunLogging":true,
@@ -104,5 +172,5 @@
 	},
 	"standard":false,
 	"tags":[],
-	"version":1
+	"version":2
 }
